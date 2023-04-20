@@ -1,0 +1,45 @@
+body { 
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px
+  }
+.MainScreenImg{
+    position: relative;
+    height: 788px;
+    width: 100%;
+    overflow: hidden;
+}
+button{
+    position: absolute;
+    bottom: 15%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    left: 46%;
+    width: 10%;
+    min-width: 100px;
+    height: 7%;
+}
+.Title{
+    position: absolute;
+    bottom: 80%;
+    font-size: 68px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    left: 33%;
+}
+.FirstCutscene{
+    position: relative;
+    height: 788px;
+    width: 100%;
+    overflow: hidden;
+}
+.Fade{
+    opacity: 0;
+    transition-duration: 0.7s;
+    transition-property: opacity;
+  }
+
+  body.fade {
+    opacity: 10;
+  }
