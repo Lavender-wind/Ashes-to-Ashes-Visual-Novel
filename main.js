@@ -546,7 +546,9 @@ var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(T
     var goodone = (MGender > 1)?
     new DialogueScene("resources/AmphriteSpeak.jpg","Ah, welcome, long time no see, Ash!","Amphrite",dialogueBox,characterBox):
     new DialogueScene("resources/AmphriteSpeak.jpg","Ah, welcome, long time no see, Asha!","Amphrite",dialogueBox,characterBox);
-    
+
+    var goodtwo = new DialogueScene("resources/AmphriteWink.jpg","How have you been? Glad to see you're in my faction.","Amphrite",dialogueBox,characterBox);
+
 
     var highest = [];
     var endings = [GoodEnding,NeutralEnding,BadEnding];
