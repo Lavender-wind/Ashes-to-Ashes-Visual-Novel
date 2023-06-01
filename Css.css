@@ -2,11 +2,15 @@ body {
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
-    margin-left: 0px
+    margin-left: 0px;
+    user-select: none;
   }
+img{
+  pointer-events: none;
+}
 .MainScreenImg{
     position: relative;
-    height: 788px;
+    height: 100vh;
     width: 100%;
     overflow: hidden;
 }
@@ -19,6 +23,17 @@ button{
     width: 10%;
     min-width: 100px;
     height: 7%;
+    overflow: hidden;
+}
+.SkipButton{
+  position: absolute;
+  bottom: 73.5vh;
+  left: calc(100vw - 125px);
+  width: 6vh;
+  height: 6vh;
+  overflow: hidden;
+  padding: 2vh;
+  z-index: 3;
 }
 .Title{
     position: absolute;
@@ -26,20 +41,119 @@ button{
     font-size: 68px;
     font-family: 'Courier New', Courier, monospace;
     color: white;
-    left: 33%;
+    left: 30%;
 }
-.FirstCutscene{
-    position: relative;
-    height: 788px;
-    width: 100%;
-    overflow: hidden;
+.fadebox{
+  position: absolute;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  animation: fadeIn 1s forwards;
+  height: 100vh;
+  width: 100%;
 }
-.Fade{
-    opacity: 0;
-    transition-duration: 0.7s;
-    transition-property: opacity;
-  }
 
-  body.fade {
-    opacity: 10;
-  }
+@keyframes fadeIn {
+  0% {opacity: 0%;}
+  100% {opacity: 100%;}
+}
+
+.DialogueBox{
+  font-family: 'Courier New', Courier, monospace;
+  height: 16vh;
+  top: 2vh;
+  width: calc(100% - 13vh);
+  left: 5vh;
+  right: calc(100% - 5vh);
+  position: absolute;
+  bottom: 75vh;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 2vh;
+}
+
+.CharacterBox{
+  font-family: 'Courier New', Courier, monospace;
+  height: 2.5vh;
+  top: 24vh;
+  position: absolute;
+  width: 25vh;
+  left: 10vh;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 2vh;
+}
+.Option1{
+  font-family: 'Courier New', Courier, monospace;
+  height: 7vh;
+  width: 140vh;
+  position: absolute;
+  top: 40vh;
+  left: 20vh;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 2vh;
+}
+.Option2{
+  font-family: 'Courier New', Courier, monospace;
+  height: 7vh;
+  width: 140vh;
+  position: absolute;
+  top: 55vh;
+  left: 20vh;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 2vh;
+}
+.Option3{
+  font-family: 'Courier New', Courier, monospace;
+  height: 7vh;
+  width: 140vh;
+  position: absolute;
+  top: 70vh;
+  left: 20vh;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 2vh;
+}
+.Gender1{
+  font-family: 'Courier New', Courier, monospace;
+  height: 7vh;
+  width: 140vh;
+  position: absolute;
+  top: 40vh;
+  left: 20vh;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 2vh;
+}
+.Gender2{
+  font-family: 'Courier New', Courier, monospace;
+  height: 7vh;
+  width: 140vh;
+  position: absolute;
+  top: 55vh;
+  left: 20vh;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 2vh;
+}
+.Gender3{
+  font-family: 'Courier New', Courier, monospace;
+  height: 7vh;
+  width: 140vh;
+  position: absolute;
+  top: 70vh;
+  left: 20vh;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 2vh;
+}

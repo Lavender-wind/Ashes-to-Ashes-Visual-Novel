@@ -1,0 +1,15 @@
+{
+    "folders": [
+        {
+            "name": "Ashes-to-Ashes-Visual-Novel",
+            "path": "."
+        },
+        {
+            "name": "resources",
+            "path": "resources"
+        }
+    ],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "Ashes-to-Ashes-Visual-Novel"
+    }
+}
