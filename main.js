@@ -361,8 +361,8 @@ var fourtyseven = new DialogueScene("resources/AltairNeutral.jpg","(At Amphrite'
 var fourtyeight = new DialogueScene("resources/AltairNeutral.jpg","I specialize in keeping people who shouldn't be here away.","Altair",dialogueBox,characterBox);
 
 var fourtynine = (MGender > 1)?
-new ChoiceScene("resources/MaleMCNeutral.jpg","(I guess I should think of something to say.)","You",dialogueBox,characterBox, "Say Something Random", "Follow Up With a Compliment", "Be Sarcastic", uno, dos, tres):
-new ChoiceScene("resources/FemaleMCNeutral.jpg","(I guess I should think of something to say.)","You",dialogueBox,characterBox, "Say Something Random", "Follow Up With a Compliment", "Be Sarcastic", uno, dos, tres);
+new ChoiceScene("resources/MaleMCNeutral.jpg","(I guess I should think of something to say.)","You",dialogueBox,characterBox, "Be Sarcastic", "Follow Up With a Compliment", "Say Something Random", uno, dos, tres):
+new ChoiceScene("resources/FemaleMCNeutral.jpg","(I guess I should think of something to say.)","You",dialogueBox,characterBox, "Be Sarcastic", "Follow Up With a Compliment", "Say Something Random", uno, dos, tres);
 
 var fifty = (MGender > 1)?
 new DialogueScene("resources/MaleMCSmile.jpg","Well it seems you've been doing a pretty good job.","You",dialogueBox,characterBox):
@@ -405,8 +405,8 @@ new DialogueScene("resources/MaleMCNeutral.jpg","...","You",dialogueBox,characte
 new DialogueScene("resources/FemaleMCNeutral.jpg","...","You",dialogueBox,characterBox);
 
 var sixtythree = (MGender > 1)?
-new ChoiceScene("resources/MaleMCNeutral.jpg","(Do I tell him?)","You",dialogueBox,characterBox, "Don't Tell Him", "Lie", "Tell Him", uno, dos, tres):
-new ChoiceScene("resources/FemaleMCNeutral.jpg","(Do I tell him?)","You",dialogueBox,characterBox, "Don't Tell Him", "Lie", "Tell Him", uno, dos, tres);
+new ChoiceScene("resources/MaleMCNeutral.jpg","(Do I tell him?)","You",dialogueBox,characterBox, "Don't Tell Him", "Tell Him", "Lie", uno, dos, tres):
+new ChoiceScene("resources/FemaleMCNeutral.jpg","(Do I tell him?)","You",dialogueBox,characterBox, "Don't Tell Him", "Tell Him", "Lie", uno, dos, tres);
 
 var sixtyfour = (MGender > 1)?
 new DialogueScene("resources/MaleMCNeutral.jpg","It's-","You",dialogueBox,characterBox):
@@ -437,8 +437,8 @@ var seventythree = new DialogueScene("resources/AltairNeutral.jpg","Alestria is 
 var seventyfour = new DialogueScene("resources/CaelusGrin.jpg","I suppose you're all right. But walking bait that attracts Alestria's attention would be quite troublesome for us, if they didn't pitch in to do anything.","Caelus",dialogueBox,characterBox);
 
 var seventyfive = (MGender > 1)?
-new ChoiceScene("resources/CaelusSmile.jpg","Well, would you like to join us, Ash?","Caelus",dialogueBox,characterBox, "Yes", "I suppose", "I don't really have a choice now, do I?", uno, dos, tres):
-new ChoiceScene("resources/CaelusSmile.jpg","Well, would you like to join us, Asha?","Caelus",dialogueBox,characterBox, "Yes", "I suppose", "I don't really have a choice now, do I?", uno, dos, tres);
+new ChoiceScene("resources/CaelusSmile.jpg","Well, would you like to join us, Ash?","Caelus",dialogueBox,characterBox, "I suppose", "Yes", "I don't really have a choice now, do I?", uno, dos, tres):
+new ChoiceScene("resources/CaelusSmile.jpg","Well, would you like to join us, Asha?","Caelus",dialogueBox,characterBox, "I suppose", "Yes", "I don't really have a choice now, do I?", uno, dos, tres);
 
 var seventysix = new DialogueScene("resources/CutsceneBlack.jpg","There's no way I could hesitate at a time like this. Alestria...for killing everyone I've ever known, need to pay.","You",dialogueBox,characterBox);
 
@@ -466,7 +466,7 @@ var eightyseven = new DialogueScene("resources/AltairGesture.jpg","We've worked 
 
 var eightyeight = new DialogueScene("resources/AmphriteSpeak.jpg","Yup, definitely.","Amphrite",dialogueBox,characterBox);
 
-var eightynine = new DialogueScene("resources/AmphriteWink.jpg","I any case, with my brilliant mind, I managed for formulate a strategy for us, with battle plans and all. So we'll be splitting into three factions, lead by me, Caelus, and Altair.","Amphrite",dialogueBox,characterBox);
+var eightynine = new DialogueScene("resources/AmphriteWink.jpg","I any case, with my brilliant mind, I managed for formulate a strategy for us, with battle plans and all. So we'll be splitting into three factions, me, Caelus, and Altair a member of the three different factions each.","Amphrite",dialogueBox,characterBox);
 
 var ninety = new DialogueScene("resources/AmphriteSpeak.jpg","You'll be working with us soon enough, and I'd like to welcome you on board, but I trust that you don't have any battle skills?","Amphrite",dialogueBox,characterBox);
 
@@ -488,7 +488,7 @@ var ninetyseven = new DialogueScene("resources/CutsceneBlack.jpg","(You arrive a
 var ninetyeight = new DialogueScene("resources/CutsceneBlack.jpg","(Alestria will pay, I will make sure of that.)","You",dialogueBox,characterBox);
 
 //you have committed a programming equivalent of a war crime --Stephanie
-var ninetynine = new ChoiceScene("resources/CutsceneBlack.jpg","(In order to do that I'll...)","You",dialogueBox,characterBox, "Study Alestria and Their Weaknesses", "Train hard", "Familiarize Myself With More People", uno, dos, tres);
+var ninetynine = new ChoiceScene("resources/CutsceneBlack.jpg","(I might wanna think of which faction I wanna join, too. Should I become a tactician with Amphrite, a fighter with Altair, or a scout with Caelus? I'll do my best to get into the one that benefits my mission most. In order to do that I'll...)","You",dialogueBox,characterBox, "Study Alestria and Their Weaknesses", "Train hard", "Familiarize Myself With More People", uno, dos, tres);
 
 //you have committed a programming equivalent of a war crime --Stephanie
 var hundred = new ChoiceScene("resources/CutsceneBlack.jpg","(I think...)","You",dialogueBox,characterBox, "Strategies Are the Most Important", "I Need to Grow Stronger", "I Need to Gain Advantages Over the Situation", uno, dos, tres);
@@ -512,7 +512,23 @@ class BranchingDialougeScene extends DialogueScene{
 
 
 //you have committed a programming equivalent of a war crime --Stephanie
-var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(Today you rendevous with the faction leader.)","()",dialogueBox,characterBox,()=>{
+var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(Today you rendevous with a member of the faction you haven't seen in a long time.)","()",dialogueBox,characterBox,()=>{
+    var highest = [];
+    var endings = [GoodEnding,NeutralEnding,BadEnding];
+    var highestValue = 0;
+    for (let i = 0; i < endings.length; i++) {
+        const count = endings[i];
+        if(count>highestValue){
+            highest = [i];
+            highestValue = count;
+        }else if(count == highestValue){
+            highest = highest.concat(i);
+        }
+    }
+    var index = Math.floor(Math.random()*highest.length);
+    var ending = highest[index];
+    scenes = scenes.concat(branches[ending]);
+
     var branches = [
         [
             goodone,
@@ -521,7 +537,25 @@ var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(T
             goodfour,
             goodfive,
             goodsix,
-            goodseven
+            goodseven,
+            goodeight,
+            goodnine,
+            goodten,
+            goodeleven,
+            goodtwelve,
+            goodthirteen,
+            goodfourteen,
+            goodfifteen,
+            goodsixteen,
+            goodseventeen,
+            goodeighteen,
+            goodnineteen,
+            goodtwenty,
+            goodtwentyone,
+            goodtwentytwo,
+            goodtwentythree,
+            goodtwentyfour,
+            goodtwentyfive
         ],
         [
             neutralone,
@@ -547,24 +581,89 @@ var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(T
     new DialogueScene("resources/AmphriteSpeak.jpg","Ah, welcome, long time no see, Ash!","Amphrite",dialogueBox,characterBox):
     new DialogueScene("resources/AmphriteSpeak.jpg","Ah, welcome, long time no see, Asha!","Amphrite",dialogueBox,characterBox);
 
-    var goodtwo = new DialogueScene("resources/AmphriteWink.jpg","How have you been? Glad to see you're in my faction.","Amphrite",dialogueBox,characterBox);
+    var goodtwo = new DialogueScene("resources/AmphriteSmile.jpg","How have you been? Glad to see you're in my faction.","Amphrite",dialogueBox,characterBox);
 
+    var goodthree = new DialogueScene("resources/AmphriteSpeak.jpg","Now as much as I would like to continue with the pleasantries, I'll tell you about the faction first, and what we intend to take care of.","Amphrite",dialogueBox,characterBox);
 
-    var highest = [];
-    var endings = [GoodEnding,NeutralEnding,BadEnding];
-    var highestValue = 0;
-    for (let i = 0; i < endings.length; i++) {
-        const count = endings[i];
-        if(count>highestValue){
-            highest = [i];
-            highestValue = count;
-        }else if(count == highestValue){
-            highest = highest.concat(i);
-        }
-    }
-    var index = Math.floor(Math.random()*highest.length);
-    var ending = highest[index];
-    scenes = scenes.concat(branches[ending]);
+    var goodfour = new DialogueScene("resources/AmphriteSpeak.jpg","I guess you could say we're the tacticians of Operation Alestria. We don't exactly participate in the action and fighting as much as we do the planning.","Amphrite",dialogueBox,characterBox);
+
+    var goodfive = new DialogueScene("resources/AmphriteSpeak.jpg","For safety reasons, we don't exactly tell the other factions either. We are only in charge of giving the command on the day of the mission, the rest is up to them.","Amphrite",dialogueBox,characterBox);
+
+    var goodsix = new DialogueScene("resources/AmphriteWink.jpg","Feels pretty good staying out of the action, doesn't it? Ah but don't mistake us for being useless.","Amphrite",dialogueBox,characterBox);
+
+    var goodseven = new DialogueScene("resources/AmphriteSpeak.jpg","The entire plan for the mission rests on us, you know, based off the scouts' information.","Amphrite",dialogueBox,characterBox);
+
+    var goodeight = new DialogueScene("resources/AmphriteWink.jpg","With that said, here's a warm welcome, and I'll introduce you!","Amphrite",dialogueBox,characterBox);
+
+    var goodnine = new DialogueScene("resources/CutsceneBlack.jpg","(A year passes and you grow in experience. You work closely with members of the faction, but especially Amphrite. As months pass, you even enter a relationship.)","()",dialogueBox,characterBox);
+
+    var goodten = new DialogueScene("resources/CutsceneBlack.jpg","(And soon, the fated day arrives.)","()",dialogueBox,characterBox);
+
+    var goodeleven = new DialogueScene("resources/AmphriteSpeak.jpg","As the votes stand, we have a more favored strategy. Whatever happens, remember to remain vigilant, everyone, and good luck.","Amphrite",dialogueBox,characterBox);
+
+    var goodtwelve = (MGender > 1)?
+    new DialogueScene("resources/MaleMCNeutral.jpg","(The meeting dissembles as the final plan is decided, and you swarm in to see the results.)","()",dialogueBox,characterBox):
+    new DialogueScene("resources/FemaleMCNeutral.jpg","(The meeting dissembles as the final plan is decided, and you swarm in to see the results.)","()",dialogueBox,characterBox);
+
+    var goodthirteen = (MGender > 1)?
+    new DialogueScene("resources/MaleMCNeutral.jpg","(Who knows if it'll work? You can only hope for the best. But as the culmination of everything you'd worked for arrives, you grip the pin close.)","()",dialogueBox,characterBox):
+    new DialogueScene("resources/FemaleMCNeutral.jpg","(Who knows if it'll work? You can only hope for the best. But as the culmination of everything you'd worked for arrives, you grip the amulet close.)","()",dialogueBox,characterBox);
+
+    var goodfourteen = (MGender > 1)?
+    new DialogueScene("resources/MaleMCNeutral.jpg","(You were a key part of the plan and the rose you wave will be both the distraction for Alestria and the cue for everything else to happen.)","()",dialogueBox,characterBox):
+    new DialogueScene("resources/FemaleMCNeutral.jpg","(You were a key part of the plan and the rose you wave will be both the distraction for Alestria and the cue for everything else to happen.)","()",dialogueBox,characterBox);
+
+    var goodfifteen = (MGender > 1)?
+    new DialogueScene("resources/MaleMCGrin.jpg","(I won't fail!)","You",dialogueBox,characterBox):
+    new DialogueScene("resources/FemaleMCGrin.jpg","(I won't fail!)","You",dialogueBox,characterBox);
+
+    var goodsixteen = new DialogueScene("resources/CutsceneBlack.jpg","(You had one shot, one first and final chance.)","()",dialogueBox,characterBox);
+    
+    var goodseventeen = (MGender > 1)?
+    new DialogueScene("resources/MaleMCNeutral.jpg","(As the sun sets, you hold the rose in your hand, walking through the dark streets bordering Alestria.)","()",dialogueBox,characterBox):
+    new DialogueScene("resources/FemaleMCNeutral.jpg","(As the sun sets, you hold the rose in your hand, walking through the dark streets bordering Alestria.)","You",dialogueBox,characterBox);
+    
+    var goodeighteen = new DialogueScene("resources/CutsceneEnd.jpg","(The rose glows brillianty, and as you hear the alert, you know you have their attention.)","()",dialogueBox,characterBox);
+    
+    var goodnineteen = (MGender > 1)?
+    new DialogueScene("resources/MaleMCGrin.jpg","(Catch me if you can, Alestria, let's play.)","You",dialogueBox,characterBox):
+    new DialogueScene("resources/FemaleMCGrin.jpg","(Catch me if you can, Alestria, let's play.)","You",dialogueBox,characterBox);
+
+    var goodtwenty = new DialogueScene("resources/CutsceneBlack.jpg","(As the night darkens, you run, out of sight to your designated hiding space as you wait. Until the sky bursts into an explosion of flames. You hear screams in the distance, but they are part of the beautiful symphony of death you have conducted.)","()",dialogueBox,characterBox);
+
+    var goodtwentyone = new DialogueScene("resources/CutsceneReflection.jpg","(Firelight flickers in your eyes, and you see the same spark in your fellow companions, the great swath of flames spreading over the landscape, Alestria burning as your home once did. You'd done it, finally, have never felt more alive, as the great burden is lifted off your shoulders. You know that Amphrite will be here soon, as will Altair and Caelus. You smile to yourself.)","()",dialogueBox,characterBox);
+
+    var goodtwentytwo = (MGender > 1)?
+    new DialogueScene("resources/MaleMCNeutral.jpg","(...A rose?)","You",dialogueBox,characterBox):
+    new DialogueScene("resources/FemaleMCNeutral.jpg","(...A rose?)","You",dialogueBox,characterBox);
+
+    var goodtwentythree = new DialogueScene("resources/CutsceneBlack.jpg","(A single white rose lies on the side of the street. Pale, beautiful. You throw it into the fires of which Alestria burns. The purest of white, it folds and sizzles in the heat as it withers into smoke. The dead will be offered no redemption.)","()",dialogueBox,characterBox);
+
+    var goodtwentyfour = new DialogueScene("resources/CutsceneBlack.jpg","(As fire rises, you whisper into the fumes.)","()",dialogueBox,characterBox);
+
+    var goodtwentyfive = (MGender > 1)?
+    new DialogueScene("resources/MaleMCGrin.jpg","Ashes to ashes, dust to dust. May evil fall to oblivion, and the guilty never find rest.","You",dialogueBox,characterBox):
+    new DialogueScene("resources/FemaleMCGrin.jpg","Ashes to ashes, dust to dust. May evil fall to oblivion, and the guilty never find rest.","You",dialogueBox,characterBox);
+
+    var neutralone = new DialogueScene("resources/AltairBlush.jpg","..!","Altair",dialogueBox,characterBox);
+
+    var neutraltwo = new DialogueScene("resources/AltairBlush.jpg","It's you.","Altair",dialogueBox,characterBox);
+
+    var neutralthree = new DialogueScene("resources/AltairGesture.jpg","Glad to see you're in my faction.","Altair",dialogueBox,characterBox);
+
+    var neutralfour = new DialogueScene("resources/AltairNeutral.jpg","...We're a faction that specializes in fighting, we carry out the tactician faction's plans.","Altair",dialogueBox,characterBox);
+
+    var neutralone = new DialogueScene("resources/AltairNeutral.jpg","Those plans are usually private, but since you're not occupying Amphrite today, she'll explain the plans to Caelus, since the scouting faction is taking a break today as well.","Altair",dialogueBox,characterBox);
+
+    var neutralone = new DialogueScene("resources/AltairGesture.jpg","Who knows why he wants to know so early.","Altair",dialogueBox,characterBox);
+
+    var neutralone = new DialogueScene("resources/AltairNeutral.jpg","But we should get going, I'll give you a low-down of the secret sword styles we use later.","Altair",dialogueBox,characterBox);
+
+    var neutralone = new DialogueScene("resources/AltairNeutral.jpg","I really don't do this often...But only 'cause it's you.","Altair",dialogueBox,characterBox);
+
+    var neutralone = new DialogueScene("resources/AltairBlush.jpg","..!","Altair",dialogueBox,characterBox);
+
+    var neutralone = new DialogueScene("resources/AltairGesture.jpg","As in I admire your fighting abilities, that's all I mean!","Altair",dialogueBox,characterBox);
 });
 // var a;
 
