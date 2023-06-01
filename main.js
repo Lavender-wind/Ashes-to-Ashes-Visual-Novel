@@ -157,7 +157,6 @@ var GoodEnding = 0;
 var NeutralEnding = 0;
 var BadEnding = 0;
 var FGender = 0;
-var MGender = 0;
 var EhGender = 0;
 var dialogueBox = new TextBox("DialogueBox");
 var characterBox = new TextBox("CharacterBox");
