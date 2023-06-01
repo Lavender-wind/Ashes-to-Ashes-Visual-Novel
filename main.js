@@ -367,8 +367,8 @@ new ChoiceScene("resources/MaleMCNeutral.jpg","(I guess I should think of someth
 new ChoiceScene("resources/FemaleMCNeutral.jpg","(I guess I should think of something to say.)","You",dialogueBox,characterBox, "Be Sarcastic", "Follow Up With a Compliment", "Say Something Random", uno, dos, tres);
 
 var fifty = (MGender > 1)?
-new DialogueScene("resources/MaleMCSmile.jpg","Well it seems you've been doing a pretty good job.","You",dialogueBox,characterBox):
-new DialogueScene("resources/FemaleMCSmile.jpg","Well it seems you've been doing a pretty good job.","You",dialogueBox,characterBox);
+new DialogueScene("resources/MaleMCGrin.jpg","Well it seems you've been doing a pretty good job.","You",dialogueBox,characterBox):
+new DialogueScene("resources/FemaleMCGrin.jpg","Well it seems you've been doing a pretty good job.","You",dialogueBox,characterBox);
 
 var fiftyone = new DialogueScene("resources/AltairBlush.jpg","!","Altair",dialogueBox,characterBox);
 
