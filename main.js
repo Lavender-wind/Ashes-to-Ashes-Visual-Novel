@@ -555,7 +555,10 @@ var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(T
             goodtwentytwo,
             goodtwentythree,
             goodtwentyfour,
-            goodtwentyfive
+            goodtwentyfive,
+            goodtwentysix,
+            goodtwentyseven,
+            goodtwentyeight
         ],
         [
             neutralone,
@@ -564,7 +567,52 @@ var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(T
             neutralfour,
             neutralfive,
             neutralsix,
-            neutralseven
+            neutralseven,
+            neutraleight,
+            neutralnine,
+            neutralten,
+            neutraleleven,
+            neutraltwelve,
+            neutralthirteen,
+            neutralfourteen,
+            neutralfifteen,
+            neutralsixteen,
+            neutralseventeen,
+            neutraleighteen,
+            neutralnineteen,
+            neutraltwenty,
+            neutraltwentyone,
+            neutraltwentytwo,
+            neutraltwentythree,
+            neutraltwentyfour,
+            neutraltwentyfive,
+            neutraltwentysixr,
+            neutraltwentyseven,
+            neutraltwentyeight,
+            neutraltwentynine,
+            neutralthirty,
+            neutralthirtyone,
+            neutralthirtytwo,
+            neutralthirtythree,
+            neutralthirtyfour,
+            neutralthirtyfive,
+            neutralthirtysix,
+            neutralthirtyseven,
+            neutralthirtyeight,
+            neutralthirtynine,
+            neutralfourty,
+            neutralfourtyone,
+            neutralfourtytwo,
+            neutralfourthree,
+            neutralfourtyfour,
+            neutralfourtyfive,
+            neutralfourtysix,
+            neutralfourtyseven,
+            neutralfourtyeight,
+            neutralfourtynine,
+            neutralfifty,
+            neutralfiftyone,
+            neutralfiftytwo
         ],
         [
             badone,
@@ -645,6 +693,13 @@ var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(T
     new DialogueScene("resources/MaleMCGrin.jpg","Ashes to ashes, dust to dust. May evil fall to oblivion, and the guilty never find rest.","You",dialogueBox,characterBox):
     new DialogueScene("resources/FemaleMCGrin.jpg","Ashes to ashes, dust to dust. May evil fall to oblivion, and the guilty never find rest.","You",dialogueBox,characterBox);
 
+    var goodtwentysix = new DialogueScene("resources/CutsceneBlack.jpg","End","...",dialogueBox,characterBox);
+
+    var goodtwentyseven = new DialogueScene("resources/CutsceneBlack.jpg","Good Ending","...",dialogueBox,characterBox);
+
+    var goodtwentyeight = new DialogueScene("resources/Test.jpg","(Yes I had to)","...",dialogueBox,characterBox);
+
+
     var neutralone = new DialogueScene("resources/AltairBlush.jpg","..!","Altair",dialogueBox,characterBox);
 
     var neutraltwo = new DialogueScene("resources/AltairBlush.jpg","It's you.","Altair",dialogueBox,characterBox);
@@ -653,17 +708,133 @@ var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(T
 
     var neutralfour = new DialogueScene("resources/AltairNeutral.jpg","...We're a faction that specializes in fighting, we carry out the tactician faction's plans.","Altair",dialogueBox,characterBox);
 
-    var neutralone = new DialogueScene("resources/AltairNeutral.jpg","Those plans are usually private, but since you're not occupying Amphrite today, she'll explain the plans to Caelus, since the scouting faction is taking a break today as well.","Altair",dialogueBox,characterBox);
+    var neutralfive = new DialogueScene("resources/AltairNeutral.jpg","Those plans are usually private, but since you're not occupying Amphrite today, she'll explain the plans to Caelus, since the scouting faction is taking a break today as well.","Altair",dialogueBox,characterBox);
 
-    var neutralone = new DialogueScene("resources/AltairGesture.jpg","Who knows why he wants to know so early.","Altair",dialogueBox,characterBox);
+    var neutralsix = new DialogueScene("resources/AltairGesture.jpg","Who knows why he wants to know so early.","Altair",dialogueBox,characterBox);
 
-    var neutralone = new DialogueScene("resources/AltairNeutral.jpg","But we should get going, I'll give you a low-down of the secret sword styles we use later.","Altair",dialogueBox,characterBox);
+    var neutralseven = new DialogueScene("resources/AltairNeutral.jpg","But we should get going, I'll give you a low-down of the secret sword styles we use later.","Altair",dialogueBox,characterBox);
 
-    var neutralone = new DialogueScene("resources/AltairNeutral.jpg","I really don't do this often...But only 'cause it's you.","Altair",dialogueBox,characterBox);
+    var neutraleight = new DialogueScene("resources/AltairNeutral.jpg","I really don't do this often...But only 'cause it's you.","Altair",dialogueBox,characterBox);
 
-    var neutralone = new DialogueScene("resources/AltairBlush.jpg","..!","Altair",dialogueBox,characterBox);
+    var neutralnine = new DialogueScene("resources/AltairBlush.jpg","..!","Altair",dialogueBox,characterBox);
 
-    var neutralone = new DialogueScene("resources/AltairGesture.jpg","As in I admire your fighting abilities, that's all I mean!","Altair",dialogueBox,characterBox);
+    var neutralten = new DialogueScene("resources/AltairGesture.jpg","As in I admire your fighting abilities, that's all I mean!","Altair",dialogueBox,characterBox);
+
+    var neutraleleven = (MGender > 1)?
+    new DialogueScene("resources/MaleMCGrin.jpg","(Yeah, sure.)","You",dialogueBox,characterBox):
+    new DialogueScene("resources/FemaleMCGrin.jpg","(Yeah, sure.)","You",dialogueBox,characterBox);
+
+    var neutraltwelve = new DialogueScene("resources/CutsceneBlack.jpg","(Roughly a year passes, in which you continue to train ever so diligently. Altair often comes to visit you, and you ask him for suggestions after the coach of the fighting has trained you.)","()",dialogueBox,characterBox);
+
+    var neutralthirteen = new DialogueScene("resources/CutsceneBlack.jpg","(He's a surprisingly good fighter and teacher, even though all he does is give suggestions when you ask him to. Sort of a tutor, probably.)","()",dialogueBox,characterBox);
+
+    var neutralfourteen = new DialogueScene("resources/CutsceneBlack.jpg","(But soon enough, although you don't exactly know how you got here, you enter into a relationship with him.)","()",dialogueBox,characterBox);
+
+    var neutralfifteen = new DialogueScene("resources/CutsceneBlack.jpg","(It's awkward at first, but soon you grow closer.)","()",dialogueBox,characterBox);
+
+    var neutralsixteen = new DialogueScene("resources/CutsceneBlack.jpg","(Soon, the fated day is close, and you doze lightly in your tent. Altair and Amphrite sit beside you, chatting, while Caelus is nowhere to be seen.)","()",dialogueBox,characterBox);
+
+    var neutralseventeen = (MGender > 1)?
+    new DialogueScene("resources/MaleMCNeutral.jpg","(It feels nice, but strangely I feel like something is missing.)","You",dialogueBox,characterBox):
+    new DialogueScene("resources/FemaleMCNeutral.jpg","(It feels nice, but strangely I feel like something is missing.)","You",dialogueBox,characterBox);
+
+    var neutraleighteen = (MGender > 1)?
+    new DialogueScene("resources/MaleMCNeutral.jpg","(As you get up, a sudden movement catches your eye, too fast for you to even react.)","()",dialogueBox,characterBox):
+    new DialogueScene("resources/FemaleMCNeutral.jpg","(As you get up, a sudden movement catches your eye, too fast for you to even react.)","()",dialogueBox,characterBox);
+
+    var neutralnineteen = new DialogueScene("resources/CutsceneBlack.jpg","(Amphrite falls at your feet, her eyes glassy as the life fades from them. You scream.)","()",dialogueBox,characterBox);
+
+    var neutraltwenty = (MGender > 1)?
+    new DialogueScene("resources/MaleMCNeutral.jpg","(A blade stabs for you, too, from behind the tent, the wielder obscured through the fabric. Too late, you have no time to dodge.","()",dialogueBox,characterBox):
+    new DialogueScene("resources/FemaleMCNeutral.jpg","(A blade stabs for you, too, from behind the tent, the wielder obscured through the fabric. Too late, you have no time to dodge.)","()",dialogueBox,characterBox);
+
+    var neutraltwentyone = new DialogueScene("resources/CutsceneBlack.jpg","(Yet you feel no pain.)","()",dialogueBox,characterBox);
+    
+    var neutraltwentytwo = new DialogueScene("resources/AltairNeutral.jpg","(You turn to see Altair, bleeding as he'd thrown himself behind you, wresting away the sword and saving your life.)","()",dialogueBox,characterBox);
+   
+    var neutraltwentythree = new DialogueScene("resources/AltairGesture.jpg","...Go!","Altair",dialogueBox,characterBox);
+
+    var neutraltwentyfour = new DialogueScene("resources/CutsceneBlack.jpg","(Badly wounded, he pulls out the with bloody hands, and rushes at nearby enemies who'd begun to swarm in.)","()",dialogueBox,characterBox);
+
+    var neutraltwentyfive = new DialogueScene("resources/CutsceneBlack.jpg","(Your mind stays on Amphrite, and all that she used to be, and feel a rage boiling inside of you. It's too late, you won't hold back anymore.)","()",dialogueBox,characterBox);
+
+    var neutraltwentysixr = new DialogueScene("resources/CutsceneBlack.jpg","(It then occured to you that there was only one way that attack would've happened — If Caelus had spilled the plans to Alestria, if he'd been in cahoots with them from the very beginning.)","()",dialogueBox,characterBox);
+   
+    var neutraltwentyseven = new DialogueScene("resources/CutsceneBlack.jpg","(And the blade that Altair now held was unmistakably Caelus's.)","()",dialogueBox,characterBox);
+
+    var neutraltwentyeight = (MGender > 1)?
+    new DialogueScene("resources/MaleMCNeutral.jpg","(Traitor, you traitor!)","You",dialogueBox,characterBox):
+    new DialogueScene("resources/FemaleMCNeutral.jpg","(Traitor, you traitor!)","You",dialogueBox,characterBox);
+
+    var neutraltwentynine = (MGender > 1)?
+    new DialogueScene("resources/MaleMCNeutral.jpg","(Traitor, you traitor!)","You",dialogueBox,characterBox):
+    new DialogueScene("resources/FemaleMCNeutral.jpg","(Traitor, you traitor!)","You",dialogueBox,characterBox);
+
+    var neutralthirty = (MGender > 1)?
+    new DialogueScene("resources/MaleMCNeutral.jpg","(Tears threatened to escape your eyes, but you hold them back, you empty your mind and let one thought take over. You'd trained this long, and could hold your own against as many people as you wanted.)","()",dialogueBox,characterBox):
+    new DialogueScene("resources/FemaleMCNeutral.jpg","(Tears threatened to escape your eyes, but you hold them back, you empty your mind and let one thought take over. You’d trained this long, and could hold your own against as many people as you wanted.)","()",dialogueBox,characterBox);
+    
+    var neutralthirtyone = new DialogueScene("resources/CutsceneBlack.jpg","(You attack, your blade the only salvation within an endless torrent of death.)","You",dialogueBox,characterBox);
+    
+    var neutralthirtytwo = (MGender > 1)?
+    new DialogueScene("resources/MaleMCNeutral.jpg","(Don't stop, keep going, don't stop.)","You",dialogueBox,characterBox):
+    new DialogueScene("resources/FemaleMCNeutral.jpg","(Don't stop, keep going, don't stop.)","You",dialogueBox,characterBox);
+
+    var neutralthirtythree = (MGender > 1)?
+    new DialogueScene("resources/MaleMCNeutral.jpg","(Don't stop, keep going, don't you dare stop.)","You",dialogueBox,characterBox):
+    new DialogueScene("resources/FemaleMCNeutral.jpg","(Don't stop, keep going, don't you dare stop.)","You",dialogueBox,characterBox);
+
+    var neutralthirtyfour = (MGender > 1)?
+    new DialogueScene("resources/MaleMCNeutral.jpg","(Don't stop, keep going, don't stop!)","You",dialogueBox,characterBox):
+    new DialogueScene("resources/FemaleMCNeutral.jpg","(Don't stop, keep going, don't stop!)","You",dialogueBox,characterBox);
+    
+    var neutralthirtyfive = new DialogueScene("resources/CutsceneBlack.jpg","(The world spun, whirring as you feel your instincts take over before stillness reigns, and the town is empty, save for you. You did it, you'd killed them all. Even Caelus.)","()",dialogueBox,characterBox);
+
+    var neutralthirtysix = new DialogueScene("resources/CutsceneBlack.jpg","(You stand atop a mountain of corpses, some of your friends, but more that you’ve slain, your blade stained with their blood. Yet as you walk off, you feel nothing, nothing at all as emptiness takes form in your heart.)","()",dialogueBox,characterBox);
+
+    var neutralthirtyseven = (MGender > 1)?
+    new DialogueScene("resources/MaleMCNeutral.jpg","...","You",dialogueBox,characterBox):
+    new DialogueScene("resources/FemaleMCNeutral.jpg","...","You",dialogueBox,characterBox);
+    
+    var neutralthirtyeight = (MGender > 1)?
+    new DialogueScene("resources/MaleMCNeutral.jpg","(You’ve come this far, just to lose everything again.)","()",dialogueBox,characterBox):
+    new DialogueScene("resources/FemaleMCNeutral.jpg","(You’ve come this far, just to lose everything again.)","()",dialogueBox,characterBox);
+    
+    var neutralthirtynine = (MGender > 1)?
+    new DialogueScene("resources/MaleMCNeutral.jpg","(A faraway cry sounds, the sobbing of a child, but you pay it no heed.)","()",dialogueBox,characterBox):
+    new DialogueScene("resources/FemaleMCNeutral.jpg","(A faraway cry sounds, the sobbing of a child, but you pay it no heed.)","()",dialogueBox,characterBox);
+    
+    var neutralfourty = (MGender > 1)?
+    new DialogueScene("resources/MaleMCNeutral.jpg","(Ashes to Ashes, your soul to fire. Your heart was long dead since the day of the flames, buried beneath the rubble of your home, and the people you failed to save.)","()",dialogueBox,characterBox):
+    new DialogueScene("resources/FemaleMCNeutral.jpg","(Ashes to Ashes, your soul to fire. Your heart was long dead since the day of the flames, buried beneath the rubble of your home, and the people you failed to save.)","()",dialogueBox,characterBox);
+
+    var neutralfourtyone = (MGender > 1)?
+    new DialogueScene("resources/MaleMCNeutral.jpg","(Traitor, you traitor!)","You",dialogueBox,characterBox):
+    new DialogueScene("resources/FemaleMCNeutral.jpg","(Traitor, you traitor!)","You",dialogueBox,characterBox);
+
+    var neutralfourtytwo = new DialogueScene("resources/CutsceneBlack.jpg","(But as you turn to leave, a voice stops you, and you turn.)","()",dialogueBox,characterBox);
+
+    var neutralfourthree = new DialogueScene("resources/CutsceneBlack.jpg","(You could recognize that voice anywhere.)","()",dialogueBox,characterBox)
+    
+    var neutralfourtyfour = (MGender > 1)?
+    new DialogueScene("resources/MaleMCSpeak.jpg","Altair?","You",dialogueBox,characterBox):
+    new DialogueScene("resources/FemaleMCSpeak.jpg","Altair?","You",dialogueBox,characterBox);
+
+    var neutralfourtyfive = new DialogueScene("resources/CutsceneBlack.jpg","(Was he still alive? You didn't know, but you pick apart the tents, wishing, hoping that he was.)","()",dialogueBox,characterBox);
+
+    var neutralfourtysix = new DialogueScene("resources/CutsceneBlack.jpg","(Finally you see him, and go to his side. You find a pulse and stop his bleeding. The wound is deep, but as his breathing eases out you know he'll live.)","()",dialogueBox,characterBox);
+    
+    var neutralfourtyseven = new DialogueScene("resources/CutsceneBlack.jpg","(Sigining in relief, you stay beside him, the only remnant left of the world that you still care about.)","()",dialogueBox,characterBox);
+    
+    var neutralfourtyeight = new DialogueScene("resources/CutsceneBlack.jpg","(At least you'll make it another day, alive, in this bloodstained world where you managed to take down all your enemies, but at what cost?)","()",dialogueBox,characterBox);
+
+    var neutralfourtynine = new DialogueScene("resources/CutsceneEnd.jpg","(All that's left unstained was the single triangular rose you wore, still radiant in its purity, even after everything.)","()",dialogueBox,characterBox);
+
+    var neutralfifty = new DialogueScene("resources/CutsceneBlack.jpg","End","...",dialogueBox,characterBox);
+
+    var neutralfiftyone = new DialogueScene("resources/CutsceneBlack.jpg","Neutral Ending","...",dialogueBox,characterBox);
+
+    var neutralfiftytwo = new DialogueScene("resources/Test.jpg","(Yes I had to)","...",dialogueBox,characterBox);
 });
 // var a;
 
