@@ -622,7 +622,28 @@ var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(T
             badfour,
             badfive,
             badsix,
-            badseven
+            badseven,
+            badeight,
+            badnine,
+            badten,
+            badeleven,
+            badtwelve,
+            badthirteen,
+            badfourteen,
+            badfifteen,
+            badsixteen,
+            badseventeen,
+            badeighteen,
+            badnineteen,
+            badtwenty,
+            badtwentyone,
+            badtwentytwo,
+            badtwentythree,
+            badtwentyfour,
+            badtwentyfive,
+            badtwentysix,
+            badtwentyseven,
+            badtwentyeight
         ]
     ];
 
@@ -759,7 +780,7 @@ var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(T
 
     var neutraltwentyfive = new DialogueScene("resources/CutsceneBlack.jpg","(Your mind stays on Amphrite, and all that she used to be, and feel a rage boiling inside of you. It's too late, you won't hold back anymore.)","()",dialogueBox,characterBox);
 
-    var neutraltwentysixr = new DialogueScene("resources/CutsceneBlack.jpg","(It then occured to you that there was only one way that attack would've happened — If Caelus had spilled the plans to Alestria, if he'd been in cahoots with them from the very beginning.)","()",dialogueBox,characterBox);
+    var neutraltwentysixr = new DialogueScene("resources/CutsceneBlack.jpg","(It then occured to you that there was only one way that attack would've happened -- If Caelus had spilled the plans to Alestria, if he'd been in cahoots with them from the very beginning.)","()",dialogueBox,characterBox);
    
     var neutraltwentyseven = new DialogueScene("resources/CutsceneBlack.jpg","(And the blade that Altair now held was unmistakably Caelus's.)","()",dialogueBox,characterBox);
 
@@ -836,6 +857,72 @@ var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(T
     var neutralfiftyone = new DialogueScene("resources/CutsceneBlack.jpg","Neutral Ending","...",dialogueBox,characterBox);
 
     var neutralfiftytwo = new DialogueScene("resources/Test.jpg","(Yes I had to)","...",dialogueBox,characterBox);
+
+    var badone = new DialogueScene("resources/CaelusSmile.jpg","Oh wow, isn't great to see you here.","Caelus",dialogueBox,characterBox);
+
+    var badtwo = new DialogueScene("resources/CaelusGrin.jpg","We haven't talked in a long while.","Caelus",dialogueBox,characterBox);
+
+    var badthree = new DialogueScene("resources/CaelusSmile.jpg","Still remember me?","Caelus",dialogueBox,characterBox);
+
+    var badfour = new DialogueScene("resources/CaelusSmile.jpg","A-haha I was kidding~ Welcome to the scouting faction! Where we relay news and intel to the tacticians and fighters so tehy can carry out with the plan better.","Caelus",dialogueBox,characterBox);
+
+    var badfive = new DialogueScene("resources/CaelusSmile.jpg","Of course we'll also have a part in the fighting if you wanted to exact revenge with your own hands, except we mainly do long range combat and short range only when neccesary.","Caelus",dialogueBox,characterBox);
+
+    var badsix = new DialogueScene("resources/CaelusGrin.jpg","We still have to train though, so don't even think about slacking off.","Caelus",dialogueBox,characterBox);
+
+    var badseven = new DialogueScene("resources/CaelusSmile.jpg","With all that said, I'll go get some intel on the battle plans from Amphrite.","Caelus",dialogueBox,characterBox);
+
+    var badeight = (MGender > 1)?
+    new DialogueScene("resources/MaleMCNeutral.jpg","(I can't help feeling a bit suspicious, didn't the branch always teach us that the tacticians but never reveal information to anyone else?)","You",dialogueBox,characterBox):
+    new DialogueScene("resources/FemaleMCNeutral.jpg","(I can't help feeling a bit suspicious, didn't the branch always teach us that the tacticians but never reveal information to anyone else?)","You",dialogueBox,characterBox);
+
+    var badnine = new DialogueScene("resources/CaelusGrin.jpg","Well then, you go on to the faction, and I'll help out later!.","Caelus",dialogueBox,characterBox);
+
+    var badten = new DialogueScene("resources/CutsceneBlack.jpg","(Around a year passes, and the time of battle approaches. Nervous, you stand on the balcony to get some air.)","()",dialogueBox,characterBox);
+
+    var badeleven = (MGender > 1)?
+    new DialogueScene("resources/MaleMCNeutral.jpg","(It's strangely quiet.)","You",dialogueBox,characterBox):
+    new DialogueScene("resources/FemaleMCNeutral.jpg","(It's strangely quiet.)","You",dialogueBox,characterBox);
+
+    var badtwelve = (MGender > 1)?
+    new DialogueScene("resources/MaleMCGrin.jpg","(But I suppose that means everyone else is busy with preparations, that's a good thing. I sure hope we win this.)","You",dialogueBox,characterBox):
+    new DialogueScene("resources/FemaleMCGrin.jpg","(But I suppose that means everyone else is busy with preparations, that's a good thing. I sure hope we win this.","You",dialogueBox,characterBox);
+
+    var badthirteen = new DialogueScene("resources/CutsceneBlack.jpg","(Footsteps enter behind you, but you have no time to turn around before a flash of pain threatens to make the world go black.)","()",dialogueBox,characterBox);
+
+    var badfourteen = new DialogueScene("resources/CutsceneBlack.jpg","...!!","You",dialogueBox,characterBox);
+
+    var badfifteen = new DialogueScene("resources/CutsceneBlack.jpg","(It hurts...I can't...)","You",dialogueBox,characterBox);
+
+    var badsixteen = new DialogueScene("resources/CutsceneBlack.jpg","(The sword plunges deeper into your back, and you choke on the warmth of your own blood. You can't talk, you can't breathe--)","()",dialogueBox,characterBox);
+
+    var badseventeen = (MGender > 1)?
+    new DialogueScene("resources/CaelusSad.jpg","I'm sorry, Ash.","Caelus",dialogueBox,characterBox):
+    new DialogueScene("resources/CaelusSad.jpg","I'm sorry, Asha.","You",dialogueBox,characterBox);
+
+    var badeighteen = new DialogueScene("resources/CutsceneBlack.jpg","(You'd trusted him, of course you did.)","()",dialogueBox,characterBox);
+
+    var badnineteen = new DialogueScene("resources/CutsceneBlack.jpg","(Caelus, you traitor, you traitor!)","You",dialogueBox,characterBox);
+
+    var badtwenty = new DialogueScene("resources/CaelusSad.jpg","I really hoped it would't turn out this way, and it's not exactly easy to feel proud about fooling you guys for so long.","Caelus",dialogueBox,characterBox);
+
+    var badtwentyone = new DialogueScene("resources/CaelusSmile.jpg","But I suppose sacrifices do have to be made. All hail Alestria.","Caelus",dialogueBox,characterBox);
+
+    var badtwentytwo = (MGender > 1)?
+    new DialogueScene("resources/CaelusGrin.jpg","Ashes to ashes, dust to dust. Farewell, Ash, and may you rest forevermore.","Caelus",dialogueBox,characterBox):
+    new DialogueScene("resources/CaelusGrin.jpg","Ashes to ashes, dust to dust. Goodbye, Asha, and may you rest forevermore.","Caelus",dialogueBox,characterBox);
+
+    var badtwentythree = new DialogueScene("resources/CutsceneBlack.jpg","(The plan was over, you'd all failed.)","()",dialogueBox,characterBox);
+   
+    var badtwentyfour = new DialogueScene("resources/CutsceneBlack.jpg","(No words come out as you gasp, light fading from your eyes as the world swirls into cold.)","()",dialogueBox,characterBox);
+
+    var badtwentyfive = new DialogueScene("resources/CutsceneEnd.jpg","(Cold, it was so cold...)","()",dialogueBox,characterBox);
+
+    var badtwentysix = new DialogueScene("resources/CutsceneBlack.jpg","End","...",dialogueBox,characterBox);
+
+    var badtwentyseven = new DialogueScene("resources/CutsceneBlack.jpg","Bad Ending","...",dialogueBox,characterBox);
+
+    var badtwentyeight = new DialogueScene("resources/Test.jpg","(Yes I had to)","...",dialogueBox,characterBox);
 });
 // var a;
 
