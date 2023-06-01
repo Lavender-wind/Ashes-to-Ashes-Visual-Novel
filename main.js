@@ -207,7 +207,7 @@ var SkipButton = document.getElementById("Skip");
 SkipButton.addEventListener("click",nextScene);
 
 m.textbox.addEventListener("click", function(){
-    MGender ++;
+    MGender += 5;
     nextScene();
   });
 
