@@ -515,13 +515,31 @@ class BranchingDialougeScene extends DialogueScene{
 var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(Today you rendevous with the faction leader.)","()",dialogueBox,characterBox,()=>{
     var branches = [
         [
-            thirtythree
+            goodone,
+            goodtwo,
+            goodthree,
+            goodfour,
+            goodfive,
+            goodsix,
+            goodseven
         ],
         [
-            twenty
+            neutralone,
+            neutraltwo,
+            neutralthree,
+            neutralfour,
+            neutralfive,
+            neutralsix,
+            neutralseven
         ],
         [
-            fifteen
+            badone,
+            badtwo,
+            badthree,
+            badfour,
+            badfive,
+            badsix,
+            badseven
         ]
     ];
     var highest = [];
@@ -651,8 +669,7 @@ var scenes = [
     hundred,
     hundredoone,
     hundredotwo,// WHY THE F**K DID YOU DO THIS --Stephanie
-    hundredothree,
-    
+    hundredothree
 
 ]
 
