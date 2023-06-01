@@ -515,140 +515,6 @@ class BranchingDialougeScene extends DialogueScene{
 
 //you have committed a programming equivalent of a war crime --Stephanie
 var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(Today you rendevous with a member of the faction you haven't seen in a long time.)","()",dialogueBox,characterBox,()=>{
-    var highest = [];
-    var endings = [GoodEnding,NeutralEnding,BadEnding];
-    var highestValue = 0;
-    for (let i = 0; i < endings.length; i++) {
-        const count = endings[i];
-        if(count>highestValue){
-            highest = [i];
-            highestValue = count;
-        }else if(count == highestValue){
-            highest = highest.concat(i);
-        }
-    }
-    var index = Math.floor(Math.random()*highest.length);
-    var ending = highest[index];
-    scenes = scenes.concat(branches[ending]);
-
-    var branches = [
-        [
-            goodone,
-            goodtwo,
-            goodthree,
-            goodfour,
-            goodfive,
-            goodsix,
-            goodseven,
-            goodeight,
-            goodnine,
-            goodten,
-            goodeleven,
-            goodtwelve,
-            goodthirteen,
-            goodfourteen,
-            goodfifteen,
-            goodsixteen,
-            goodseventeen,
-            goodeighteen,
-            goodnineteen,
-            goodtwenty,
-            goodtwentyone,
-            goodtwentytwo,
-            goodtwentythree,
-            goodtwentyfour,
-            goodtwentyfive,
-            goodtwentysix,
-            goodtwentyseven,
-            goodtwentyeight
-        ],
-        [
-            neutralone,
-            neutraltwo,
-            neutralthree,
-            neutralfour,
-            neutralfive,
-            neutralsix,
-            neutralseven,
-            neutraleight,
-            neutralnine,
-            neutralten,
-            neutraleleven,
-            neutraltwelve,
-            neutralthirteen,
-            neutralfourteen,
-            neutralfifteen,
-            neutralsixteen,
-            neutralseventeen,
-            neutraleighteen,
-            neutralnineteen,
-            neutraltwenty,
-            neutraltwentyone,
-            neutraltwentytwo,
-            neutraltwentythree,
-            neutraltwentyfour,
-            neutraltwentyfive,
-            neutraltwentysixr,
-            neutraltwentyseven,
-            neutraltwentyeight,
-            neutraltwentynine,
-            neutralthirty,
-            neutralthirtyone,
-            neutralthirtytwo,
-            neutralthirtythree,
-            neutralthirtyfour,
-            neutralthirtyfive,
-            neutralthirtysix,
-            neutralthirtyseven,
-            neutralthirtyeight,
-            neutralthirtynine,
-            neutralfourty,
-            neutralfourtyone,
-            neutralfourtytwo,
-            neutralfourthree,
-            neutralfourtyfour,
-            neutralfourtyfive,
-            neutralfourtysix,
-            neutralfourtyseven,
-            neutralfourtyeight,
-            neutralfourtynine,
-            neutralfifty,
-            neutralfiftyone,
-            neutralfiftytwo
-            //SO MANY SCENES WHATTT
-        ],
-        [
-            badone,
-            badtwo,
-            badthree,
-            badfour,
-            badfive,
-            badsix,
-            badseven,
-            badeight,
-            badnine,
-            badten,
-            badeleven,
-            badtwelve,
-            badthirteen,
-            badfourteen,
-            badfifteen,
-            badsixteen,
-            badseventeen,
-            badeighteen,
-            badnineteen,
-            badtwenty,
-            badtwentyone,
-            badtwentytwo,
-            badtwentythree,
-            badtwentyfour,
-            badtwentyfive,
-            badtwentysix,
-            badtwentyseven,
-            badtwentyeight
-        ]
-    ];
-
     var goodone = (MGender > 1)?
     new DialogueScene("resources/AmphriteSpeak.jpg","Ah, welcome, long time no see, Ash!","Amphrite",dialogueBox,characterBox):
     new DialogueScene("resources/AmphriteSpeak.jpg","Ah, welcome, long time no see, Asha!","Amphrite",dialogueBox,characterBox);
@@ -925,6 +791,141 @@ var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(T
     var badtwentyseven = new DialogueScene("resources/CutsceneBlack.jpg","Bad Ending","...",dialogueBox,characterBox);
 
     var badtwentyeight = new DialogueScene("resources/Test.jpg","(Yes I had to)","...",dialogueBox,characterBox);
+
+    var highest = [];
+    var endings = [GoodEnding,NeutralEnding,BadEnding];
+    var highestValue = 0;
+    for (let i = 0; i < endings.length; i++) {
+        const count = endings[i];
+        if(count>highestValue){
+            highest = [i];
+            highestValue = count;
+        }else if(count == highestValue){
+            highest = highest.concat(i);
+        }
+    }
+    var index = Math.floor(Math.random()*highest.length);
+    var ending = highest[index];
+    scenes = scenes.concat(branches[ending]);
+
+    var branches = [
+        [
+            goodone,
+            goodtwo,
+            goodthree,
+            goodfour,
+            goodfive,
+            goodsix,
+            goodseven,
+            goodeight,
+            goodnine,
+            goodten,
+            goodeleven,
+            goodtwelve,
+            goodthirteen,
+            goodfourteen,
+            goodfifteen,
+            goodsixteen,
+            goodseventeen,
+            goodeighteen,
+            goodnineteen,
+            goodtwenty,
+            goodtwentyone,
+            goodtwentytwo,
+            goodtwentythree,
+            goodtwentyfour,
+            goodtwentyfive,
+            goodtwentysix,
+            goodtwentyseven,
+            goodtwentyeight
+        ],
+        [
+            neutralone,
+            neutraltwo,
+            neutralthree,
+            neutralfour,
+            neutralfive,
+            neutralsix,
+            neutralseven,
+            neutraleight,
+            neutralnine,
+            neutralten,
+            neutraleleven,
+            neutraltwelve,
+            neutralthirteen,
+            neutralfourteen,
+            neutralfifteen,
+            neutralsixteen,
+            neutralseventeen,
+            neutraleighteen,
+            neutralnineteen,
+            neutraltwenty,
+            neutraltwentyone,
+            neutraltwentytwo,
+            neutraltwentythree,
+            neutraltwentyfour,
+            neutraltwentyfive,
+            neutraltwentysixr,
+            neutraltwentyseven,
+            neutraltwentyeight,
+            neutraltwentynine,
+            neutralthirty,
+            neutralthirtyone,
+            neutralthirtytwo,
+            neutralthirtythree,
+            neutralthirtyfour,
+            neutralthirtyfive,
+            neutralthirtysix,
+            neutralthirtyseven,
+            neutralthirtyeight,
+            neutralthirtynine,
+            neutralfourty,
+            neutralfourtyone,
+            neutralfourtytwo,
+            neutralfourthree,
+            neutralfourtyfour,
+            neutralfourtyfive,
+            neutralfourtysix,
+            neutralfourtyseven,
+            neutralfourtyeight,
+            neutralfourtynine,
+            neutralfifty,
+            neutralfiftyone,
+            neutralfiftytwo
+            //SO MANY SCENES WHATTT
+        ],
+        [
+            badone,
+            badtwo,
+            badthree,
+            badfour,
+            badfive,
+            badsix,
+            badseven,
+            badeight,
+            badnine,
+            badten,
+            badeleven,
+            badtwelve,
+            badthirteen,
+            badfourteen,
+            badfifteen,
+            badsixteen,
+            badseventeen,
+            badeighteen,
+            badnineteen,
+            badtwenty,
+            badtwentyone,
+            badtwentytwo,
+            badtwentythree,
+            badtwentyfour,
+            badtwentyfive,
+            badtwentysix,
+            badtwentyseven,
+            badtwentyeight
+        ]
+    ];
+
 });
 // var a;
 
