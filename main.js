@@ -442,7 +442,9 @@ var seventyfive = (MGender > 1)?
 new ChoiceScene("resources/CaelusSmile.jpg","Well, would you like to join us, Ash?","Caelus",dialogueBox,characterBox, "I suppose", "Yes", "I don't really have a choice now, do I?", uno, dos, tres):
 new ChoiceScene("resources/CaelusSmile.jpg","Well, would you like to join us, Asha?","Caelus",dialogueBox,characterBox, "I suppose", "Yes", "I don't really have a choice now, do I?", uno, dos, tres);
 
-var seventysix = new DialogueScene("resources/CutsceneBlack.jpg","There's no way I could hesitate at a time like this. Alestria...for killing everyone I've ever known, need to pay.","You",dialogueBox,characterBox);
+var seventysix = (MGender > 1)?
+new DialogueScene("resources/MaleMCNeutral.jpg","There's no way I could hesitate at a time like this. Alestria...for killing everyone I've ever known, need to pay.","You",dialogueBox,characterBox):
+new DialogueScene("resources/FemaleMCNeutral.jpg","There's no way I could hesitate at a time like this. Alestria...for killing everyone I've ever known, need to pay.","You",dialogueBox,characterBox);
 
 var seventyseven = new DialogueScene("resources/CaelusGrin.jpg","Wonderful.","Caelus",dialogueBox,characterBox);
 
