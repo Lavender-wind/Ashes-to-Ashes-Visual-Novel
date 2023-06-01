@@ -207,7 +207,7 @@ var SkipButton = document.getElementById("Skip");
 SkipButton.addEventListener("click",nextScene);
 
 m.textbox.addEventListener("click", function(){
-    MGender += 5;
+    MGender ++;
     nextScene();
   });
 
@@ -256,25 +256,25 @@ var seventhScene = new GenderScene("resources/CutsceneBlack.jpg","(choose your g
 
 var eighthScene = new ChoiceScene("resources/CutsceneBlack.jpg","I need to get out of here first.","You",dialogueBox,characterBox, "Look Around", "Stay Lying Down", "Explore", uno, dos, tres);
 
-var ninthScene = (MGender > 1)?
+var ninthScene = (MGender > 0)?
 new DialogueScene("resources/MaleMCNeutral.jpg","(You try to get into a better position)","()",dialogueBox,characterBox):
 new DialogueScene("resources/FemaleMCNeutral.jpg","(You try to get into a better position)","()",dialogueBox,characterBox);
 
-var tenthScene = (MGender > 1)?
+var tenthScene = (MGender > 0)?
 new DialogueScene("resources/MaleMCNeutral.jpg","(I can't move...I think I'm trapped under the rubble. I can't remember anything from last night except blacking out, but I don't think I broke anything.)","You",dialogueBox,characterBox):
 new DialogueScene("resources/FemaleMCNeutral.jpg","(I can't move...I think I'm trapped under the rubble. I can't remember anything from last night except blacking out, but I don't think I broke anything.)","You",dialogueBox,characterBox);
 
-var eleventhScene = (MGender > 1)?
+var eleventhScene = (MGender > 0)?
 new DialogueScene("resources/MaleMCSpeak.jpg","Help! Is there anyone nearby?","You",dialogueBox,characterBox):
 new DialogueScene("resources/FemaleMCSpeak.jpg","Help! Is there anyone nearby?","You",dialogueBox,characterBox);
 
-var twelfthScene = (MGender > 1)?
+var twelfthScene = (MGender > 0)?
 new DialogueScene("resources/MaleMCNeutral.jpg","..!","You",dialogueBox,characterBox):
 new DialogueScene("resources/FemaleMCNeutral.jpg","..!","You",dialogueBox,characterBox);
 
 var thirteenthScene = new DialogueScene("resources/CaelusSad.jpg","Are you okay?","???",dialogueBox,characterBox);
 
-var fourteenthScene = (MGender > 1)?
+var fourteenthScene = (MGender > 0)?
 new DialogueScene("resources/MaleMCSpeak.jpg","Yeah, I think, but I'm stuck.","You",dialogueBox,characterBox):
 new DialogueScene("resources/FemaleMCSpeak.jpg","Yeah, I think, but I'm stuck.","You",dialogueBox,characterBox);
 
@@ -284,11 +284,11 @@ var sixteen = new DialogueScene("resources/CaelusSmile.jpg","There doesn't seem 
 
 var seventeen = new DialogueScene("resources/CaelusSmile.jpg","Here, let me help.","???",dialogueBox,characterBox);
 
-var eighteen = (MGender > 1)?
+var eighteen = (MGender > 0)?
 new DialogueScene("resources/MaleMCNeutral.jpg","(The stranger helps you break free from the rubble, and in an instant, you feel a great weight being lifted off you.)","()",dialogueBox,characterBox):
 new DialogueScene("resources/FemaleMCNeutral.jpg","(The stranger helps you break free from the rubble, and in an instant, you feel a great weight being lifted off you.)","()",dialogueBox,characterBox);
 
-var nineteen = (MGender > 1)?
+var nineteen = (MGender > 0)?
 new DialogueScene("resources/MaleMCSpeak.jpg","Ah, thanks.","You",dialogueBox,characterBox):
 new DialogueScene("resources/FemaleMCSpeak.jpg","Ah, thanks.","You",dialogueBox,characterBox);
 
@@ -296,11 +296,11 @@ var twenty = new DialogueScene("resources/CaelusGrin.jpg","No worries!","???",di
 
 var twentyone = new DialogueScene("resources/CaelusSmile.jpg","The name's Caelus, by the way, what's yours?","???",dialogueBox,characterBox);
 
-var twentytwo = (MGender > 1)?
+var twentytwo = (MGender > 0)?
 new DialogueScene("resources/MaleMCSpeak.jpg","Ash","You",dialogueBox,characterBox):
 new DialogueScene("resources/FemaleMCSpeak.jpg","Asha","You",dialogueBox,characterBox);
 
-var twentythree = (MGender > 1)?
+var twentythree = (MGender > 0)?
 new DialogueScene("resources/CaelusSmile.jpg","Ash...has a nice ring to it.","Caelus",dialogueBox,characterBox):
 new DialogueScene("resources/CaelusSmile.jpg","Asha...has a nice ring to it.","Caelus",dialogueBox,characterBox);
 
@@ -310,21 +310,21 @@ var twentyfive = new DialogueScene("resources/CaelusSmile.jpg","I think you're t
 
 var twentysix = new DialogueScene("resources/CaelusSmile.jpg","Ah, but we must not delay, I'll take you to see the others, let's go!","Caelus",dialogueBox,characterBox);
 
-var twentyseven = (MGender > 1)?
+var twentyseven = (MGender > 0)?
 new ChoiceScene("resources/MaleMCNeutral.jpg","(...Should I trust him?)","You",dialogueBox,characterBox, "Hesitate", "Follow Him", "Don't Follow Him", uno, dos, tres):
 new ChoiceScene("resources/FemaleMCNeutral.jpg","()...Should I trust him?)","You",dialogueBox,characterBox, "Hesitate", "Follow Him", "Don't Follow Him", uno, dos, tres);
 
-var twentyeight = (MGender > 1)?
+var twentyeight = (MGender > 0)?
 new DialogueScene("resources/MaleMCNeutral.jpg","(A bit hesitant, you don't follow immediately, but Caelus's hand grabs you.)","()",dialogueBox,characterBox):
 new DialogueScene("resources/FemaleMCNeutral.jpg","(A bit hesitant, you don't follow immediately, but Caelus's hand grabs you.)","()",dialogueBox,characterBox);
 
-var twentynine = (MGender > 1)?
+var twentynine = (MGender > 0)?
 new DialogueScene("resources/MaleMCSpeak.jpg","..!","You",dialogueBox,characterBox):
 new DialogueScene("resources/FemaleMCSpeak.jpg","..!","You",dialogueBox,characterBox);
 
 var thirty = new DialogueScene("resources/CaelusGrin.jpg","Come on!","Caelus",dialogueBox,characterBox);
 
-var thirtyone = (MGender > 1)?
+var thirtyone = (MGender > 0)?
 new DialogueScene("resources/MaleMCNeutral.jpg","...","You",dialogueBox,characterBox):
 new DialogueScene("resources/FemaleMCNeutral.jpg","...","You",dialogueBox,characterBox);
 
@@ -336,7 +336,7 @@ var thirtyfour = new DialogueScene("resources/AmphriteSpeak.jpg","Welcome back, 
 
 var thirtyfive = new DialogueScene("resources/AltairNeutral.jpg","...","?",dialogueBox,characterBox);
 
-var thirtysix = (MGender > 1)?
+var thirtysix = (MGender > 0)?
 new DialogueScene("resources/CaelusSmile.jpg","This is Ash, I found him trapped under the rubble.","Caelus",dialogueBox,characterBox):
 new DialogueScene("resources/CaelusSmile.jpg","This is Asha, I found her trapped under the rubble.","Caelus",dialogueBox,characterBox);
 
@@ -362,11 +362,11 @@ var fourtyseven = new DialogueScene("resources/AltairNeutral.jpg","(At Amphrite'
 
 var fourtyeight = new DialogueScene("resources/AltairNeutral.jpg","I specialize in keeping people who shouldn't be here away.","Altair",dialogueBox,characterBox);
 
-var fourtynine = (MGender > 1)?
+var fourtynine = (MGender > 0)?
 new ChoiceScene("resources/MaleMCNeutral.jpg","(I guess I should think of something to say.)","You",dialogueBox,characterBox, "Be Sarcastic", "Say Something Random", "Follow Up With a Compliment", uno, dos, tres):
 new ChoiceScene("resources/FemaleMCNeutral.jpg","(I guess I should think of something to say.)","You",dialogueBox,characterBox, "Be Sarcastic", "Say Something Random", "Follow Up With a Compliment", uno, dos, tres);
 
-var fifty = (MGender > 1)?
+var fifty = (MGender > 0)?
 new DialogueScene("resources/MaleMCGrin.jpg","Well it seems you've been doing a pretty good job.","You",dialogueBox,characterBox):
 new DialogueScene("resources/FemaleMCGrin.jpg","Well it seems you've been doing a pretty good job.","You",dialogueBox,characterBox);
 
@@ -374,11 +374,11 @@ var fiftyone = new DialogueScene("resources/AltairBlush.jpg","!","Altair",dialog
 
 var fiftytwo = new DialogueScene("resources/AltairGesture.jpg","Thanks.","Altair",dialogueBox,characterBox);
 
-var fiftythree = (MGender > 1)?
+var fiftythree = (MGender > 0)?
 new DialogueScene("resources/MaleMCNeutral.jpg","(Well that was unexpected.)","You",dialogueBox,characterBox):
 new DialogueScene("resources/FemaleMCNeutral.jpg","(Well that was unexpected.)","You",dialogueBox,characterBox);
 
-var fiftyfour = (MGender > 1)?
+var fiftyfour = (MGender > 0)?
 new DialogueScene("resources/MaleMCNeutral.jpg","(I meant it half sarcastically, too.)","You",dialogueBox,characterBox):
 new DialogueScene("resources/FemaleMCNeutral.jpg","(I meant it half sarcastically, too.)","You",dialogueBox,characterBox);
 
@@ -390,27 +390,27 @@ var fiftyseven = new DialogueScene("resources/CaelusSad.jpg","The culprit seems 
 
 var fiftyeight = new DialogueScene("resources/CaelusSad.jpg","As for what Alestria is looking for...","Caelus",dialogueBox,characterBox);
 
-var fiftynine = (MGender > 1)?
+var fiftynine = (MGender > 0)?
 new DialogueScene("resources/CaelusGrin.jpg","It's you, Ash.","Caelus",dialogueBox,characterBox):
 new DialogueScene("resources/CaelusGrin.jpg","It's you, Asha.","Caelus",dialogueBox,characterBox);
 
-var sixty = (MGender > 1)?
+var sixty = (MGender > 0)?
 new DialogueScene("resources/MaleMCNeutral.jpg","(Wha-)","You",dialogueBox,characterBox):
 new DialogueScene("resources/FemaleMCNeutral.jpg","(Wha-)","You",dialogueBox,characterBox);
 
-var sixtyone = (MGender > 1)?
+var sixtyone = (MGender > 0)?
 new DialogueScene("resources/CaelusGrin.jpg","That pin you wear along your bag, where'd you get it?.","Caelus",dialogueBox,characterBox):
 new DialogueScene("resources/CaelusGrin.jpg","That pendant you wear on your neck, where'd you get it?.","Caelus",dialogueBox,characterBox);
 
-var sixtytwo = (MGender > 1)?
+var sixtytwo = (MGender > 0)?
 new DialogueScene("resources/MaleMCNeutral.jpg","...","You",dialogueBox,characterBox):
 new DialogueScene("resources/FemaleMCNeutral.jpg","...","You",dialogueBox,characterBox);
 
-var sixtythree = (MGender > 1)?
+var sixtythree = (MGender > 0)?
 new ChoiceScene("resources/MaleMCNeutral.jpg","(Do I tell him?)","You",dialogueBox,characterBox, "Don't Tell Him", "Lie", "Don't Tell Him", uno, dos, tres):
 new ChoiceScene("resources/FemaleMCNeutral.jpg","(Do I tell him?)","You",dialogueBox,characterBox, "Don't Tell Him", "Lie", "Don't Tell Him", uno, dos, tres);
 
-var sixtyfour = (MGender > 1)?
+var sixtyfour = (MGender > 0)?
 new DialogueScene("resources/MaleMCNeutral.jpg","It's-","You",dialogueBox,characterBox):
 new DialogueScene("resources/FemaleMCNeutral.jpg","It's-","You",dialogueBox,characterBox);
 
@@ -426,11 +426,11 @@ var sixtynine = new DialogueScene("resources/AltairNeutral.jpg","!","Altair",dia
 
 var seventy = new DialogueScene("resources/AmphriteSpeak.jpg","Now, no need to scare our little guest, is there?","Amphrite",dialogueBox,characterBox);
 
-var seventyone = (MGender > 1)?
+var seventyone = (MGender > 0)?
 new DialogueScene("resources/AmphriteSpeak.jpg","He's innocent, but you really should've told us sooner.","Amphrite",dialogueBox,characterBox):
 new DialogueScene("resources/AmphriteSpeak.jpg","She's innocent, but you really should've told us sooner.","Amphrite",dialogueBox,characterBox);
 
-var seventytwo = (MGender > 1)?
+var seventytwo = (MGender > 0)?
 new DialogueScene("resources/AmphriteSpeak.jpg","Now, Ash, I'm sure we'll work something out. No harm will come to you.","Amphrite",dialogueBox,characterBox):
 new DialogueScene("resources/AmphriteSpeak.jpg","Now, Asha, I'm sure we'll work something out. No harm will come to you.","Amphrite",dialogueBox,characterBox);
 
@@ -438,11 +438,11 @@ var seventythree = new DialogueScene("resources/AltairNeutral.jpg","Alestria is 
 
 var seventyfour = new DialogueScene("resources/CaelusGrin.jpg","I suppose you're all right. But walking bait that attracts Alestria's attention would be quite troublesome for us, if they didn't pitch in to do anything.","Caelus",dialogueBox,characterBox);
 
-var seventyfive = (MGender > 1)?
+var seventyfive = (MGender > 0)?
 new ChoiceScene("resources/CaelusSmile.jpg","Well, would you like to join us, Ash?","Caelus",dialogueBox,characterBox, "I suppose", "I don't really have a choice now, do I?", "Yes", uno, dos, tres):
 new ChoiceScene("resources/CaelusSmile.jpg","Well, would you like to join us, Asha?","Caelus",dialogueBox,characterBox, "I suppose", "I don't really have a choice now, do I?", "Yes", uno, dos, tres);
 
-var seventysix = (MGender > 1)?
+var seventysix = (MGender > 0)?
 new DialogueScene("resources/MaleMCNeutral.jpg","There's no way I could hesitate at a time like this. Alestria...for killing everyone I've ever known, need to pay.","You",dialogueBox,characterBox):
 new DialogueScene("resources/FemaleMCNeutral.jpg","There's no way I could hesitate at a time like this. Alestria...for killing everyone I've ever known, need to pay.","You",dialogueBox,characterBox);
 
@@ -517,7 +517,7 @@ class BranchingDialougeScene extends DialogueScene{
 
 //you have committed a programming equivalent of a war crime --Stephanie
 var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(Today you rendevous with a member of the faction you haven't seen in a long time.)","()",dialogueBox,characterBox,()=>{
-    var goodone = (MGender > 1)?
+    var goodone = (MGender > 0)?
     new DialogueScene("resources/AmphriteSpeak.jpg","Ah, welcome, long time no see, Ash!","Amphrite",dialogueBox,characterBox):
     new DialogueScene("resources/AmphriteSpeak.jpg","Ah, welcome, long time no see, Asha!","Amphrite",dialogueBox,characterBox);
 
@@ -541,31 +541,31 @@ var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(T
 
     var goodeleven = new DialogueScene("resources/AmphriteSpeak.jpg","As the votes stand, we have a more favored strategy. Whatever happens, remember to remain vigilant, everyone, and good luck.","Amphrite",dialogueBox,characterBox);
 
-    var goodtwelve = (MGender > 1)?
+    var goodtwelve = (MGender > 0)?
     new DialogueScene("resources/MaleMCNeutral.jpg","(The meeting dissembles as the final plan is decided, and you swarm in to see the results.)","()",dialogueBox,characterBox):
     new DialogueScene("resources/FemaleMCNeutral.jpg","(The meeting dissembles as the final plan is decided, and you swarm in to see the results.)","()",dialogueBox,characterBox);
 
-    var goodthirteen = (MGender > 1)?
+    var goodthirteen = (MGender > 0)?
     new DialogueScene("resources/MaleMCNeutral.jpg","(Who knows if it'll work? You can only hope for the best. But as the culmination of everything you'd worked for arrives, you grip the pin close.)","()",dialogueBox,characterBox):
     new DialogueScene("resources/FemaleMCNeutral.jpg","(Who knows if it'll work? You can only hope for the best. But as the culmination of everything you'd worked for arrives, you grip the amulet close.)","()",dialogueBox,characterBox);
 
-    var goodfourteen = (MGender > 1)?
+    var goodfourteen = (MGender > 0)?
     new DialogueScene("resources/MaleMCNeutral.jpg","(You were a key part of the plan and the rose you wave will be both the distraction for Alestria and the cue for everything else to happen.)","()",dialogueBox,characterBox):
     new DialogueScene("resources/FemaleMCNeutral.jpg","(You were a key part of the plan and the rose you wave will be both the distraction for Alestria and the cue for everything else to happen.)","()",dialogueBox,characterBox);
 
-    var goodfifteen = (MGender > 1)?
+    var goodfifteen = (MGender > 0)?
     new DialogueScene("resources/MaleMCGrin.jpg","(I won't fail!)","You",dialogueBox,characterBox):
     new DialogueScene("resources/FemaleMCGrin.jpg","(I won't fail!)","You",dialogueBox,characterBox);
 
     var goodsixteen = new DialogueScene("resources/CutsceneBlack.jpg","(You had one shot, one first and final chance.)","()",dialogueBox,characterBox);
     
-    var goodseventeen = (MGender > 1)?
+    var goodseventeen = (MGender > 0)?
     new DialogueScene("resources/MaleMCNeutral.jpg","(As the sun sets, you hold the rose in your hand, walking through the dark streets bordering Alestria.)","()",dialogueBox,characterBox):
     new DialogueScene("resources/FemaleMCNeutral.jpg","(As the sun sets, you hold the rose in your hand, walking through the dark streets bordering Alestria.)","You",dialogueBox,characterBox);
     
     var goodeighteen = new DialogueScene("resources/CutsceneEnd.jpg","(The rose glows brillianty, and as you hear the alert, you know you have their attention.)","()",dialogueBox,characterBox);
     
-    var goodnineteen = (MGender > 1)?
+    var goodnineteen = (MGender > 0)?
     new DialogueScene("resources/MaleMCGrin.jpg","(Catch me if you can, Alestria, let's play.)","You",dialogueBox,characterBox):
     new DialogueScene("resources/FemaleMCGrin.jpg","(Catch me if you can, Alestria, let's play.)","You",dialogueBox,characterBox);
 
@@ -573,7 +573,7 @@ var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(T
 
     var goodtwentyone = new DialogueScene("resources/CutsceneReflection.jpg","(Firelight flickers in your eyes, and you see the same spark in your fellow companions, the great swath of flames spreading over the landscape, Alestria burning as your home once did. You'd done it, finally, have never felt more alive, as the great burden is lifted off your shoulders. You know that Amphrite will be here soon, as will Altair and Caelus. You smile to yourself.)","()",dialogueBox,characterBox);
 
-    var goodtwentytwo = (MGender > 1)?
+    var goodtwentytwo = (MGender > 0)?
     new DialogueScene("resources/MaleMCNeutral.jpg","(...A rose?)","You",dialogueBox,characterBox):
     new DialogueScene("resources/FemaleMCNeutral.jpg","(...A rose?)","You",dialogueBox,characterBox);
 
@@ -581,7 +581,7 @@ var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(T
 
     var goodtwentyfour = new DialogueScene("resources/CutsceneBlack.jpg","(As fire rises, you whisper into the fumes.)","()",dialogueBox,characterBox);
 
-    var goodtwentyfive = (MGender > 1)?
+    var goodtwentyfive = (MGender > 0)?
     new DialogueScene("resources/MaleMCGrin.jpg","Ashes to ashes, dust to dust. May evil fall to oblivion, and the guilty never find rest.","You",dialogueBox,characterBox):
     new DialogueScene("resources/FemaleMCGrin.jpg","Ashes to ashes, dust to dust. May evil fall to oblivion, and the guilty never find rest.","You",dialogueBox,characterBox);
 
@@ -612,7 +612,7 @@ var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(T
 
     var neutralten = new DialogueScene("resources/AltairGesture.jpg","As in I admire your fighting abilities, that's all I mean!","Altair",dialogueBox,characterBox);
 
-    var neutraleleven = (MGender > 1)?
+    var neutraleleven = (MGender > 0)?
     new DialogueScene("resources/MaleMCGrin.jpg","(Yeah, sure.)","You",dialogueBox,characterBox):
     new DialogueScene("resources/FemaleMCGrin.jpg","(Yeah, sure.)","You",dialogueBox,characterBox);
 
@@ -626,17 +626,17 @@ var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(T
 
     var neutralsixteen = new DialogueScene("resources/CutsceneBlack.jpg","(Soon, the fated day is close, and you doze lightly in your tent. Altair and Amphrite sit beside you, chatting, while Caelus is nowhere to be seen.)","()",dialogueBox,characterBox);
 
-    var neutralseventeen = (MGender > 1)?
+    var neutralseventeen = (MGender > 0)?
     new DialogueScene("resources/MaleMCNeutral.jpg","(It feels nice, but strangely I feel like something is missing.)","You",dialogueBox,characterBox):
     new DialogueScene("resources/FemaleMCNeutral.jpg","(It feels nice, but strangely I feel like something is missing.)","You",dialogueBox,characterBox);
 
-    var neutraleighteen = (MGender > 1)?
+    var neutraleighteen = (MGender > 0)?
     new DialogueScene("resources/MaleMCNeutral.jpg","(As you get up, a sudden movement catches your eye, too fast for you to even react.)","()",dialogueBox,characterBox):
     new DialogueScene("resources/FemaleMCNeutral.jpg","(As you get up, a sudden movement catches your eye, too fast for you to even react.)","()",dialogueBox,characterBox);
 
     var neutralnineteen = new DialogueScene("resources/CutsceneBlack.jpg","(Amphrite falls at your feet, her eyes glassy as the life fades from them. You scream.)","()",dialogueBox,characterBox);
 
-    var neutraltwenty = (MGender > 1)?
+    var neutraltwenty = (MGender > 0)?
     new DialogueScene("resources/MaleMCNeutral.jpg","(A blade stabs for you, too, from behind the tent, the wielder obscured through the fabric. Too late, you have no time to dodge.","()",dialogueBox,characterBox):
     new DialogueScene("resources/FemaleMCNeutral.jpg","(A blade stabs for you, too, from behind the tent, the wielder obscured through the fabric. Too late, you have no time to dodge.)","()",dialogueBox,characterBox);
 
@@ -654,29 +654,29 @@ var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(T
    
     var neutraltwentyseven = new DialogueScene("resources/CutsceneBlack.jpg","(And the blade that Altair now held was unmistakably Caelus's.)","()",dialogueBox,characterBox);
 
-    var neutraltwentyeight = (MGender > 1)?
+    var neutraltwentyeight = (MGender > 0)?
     new DialogueScene("resources/MaleMCNeutral.jpg","(Traitor, you traitor!)","You",dialogueBox,characterBox):
     new DialogueScene("resources/FemaleMCNeutral.jpg","(Traitor, you traitor!)","You",dialogueBox,characterBox);
 
-    var neutraltwentynine = (MGender > 1)?
+    var neutraltwentynine = (MGender > 0)?
     new DialogueScene("resources/MaleMCNeutral.jpg","(Traitor, you traitor!)","You",dialogueBox,characterBox):
     new DialogueScene("resources/FemaleMCNeutral.jpg","(Traitor, you traitor!)","You",dialogueBox,characterBox);
 
-    var neutralthirty = (MGender > 1)?
+    var neutralthirty = (MGender > 0)?
     new DialogueScene("resources/MaleMCNeutral.jpg","(Tears threatened to escape your eyes, but you hold them back, you empty your mind and let one thought take over. You'd trained this long, and could hold your own against as many people as you wanted.)","()",dialogueBox,characterBox):
     new DialogueScene("resources/FemaleMCNeutral.jpg","(Tears threatened to escape your eyes, but you hold them back, you empty your mind and let one thought take over. You’d trained this long, and could hold your own against as many people as you wanted.)","()",dialogueBox,characterBox);
     
     var neutralthirtyone = new DialogueScene("resources/CutsceneBlack.jpg","(You attack, your blade the only salvation within an endless torrent of death.)","You",dialogueBox,characterBox);
     
-    var neutralthirtytwo = (MGender > 1)?
+    var neutralthirtytwo = (MGender > 0)?
     new DialogueScene("resources/MaleMCNeutral.jpg","(Don't stop, keep going, don't stop.)","You",dialogueBox,characterBox):
     new DialogueScene("resources/FemaleMCNeutral.jpg","(Don't stop, keep going, don't stop.)","You",dialogueBox,characterBox);
 
-    var neutralthirtythree = (MGender > 1)?
+    var neutralthirtythree = (MGender > 0)?
     new DialogueScene("resources/MaleMCNeutral.jpg","(Don't stop, keep going, don't you dare stop.)","You",dialogueBox,characterBox):
     new DialogueScene("resources/FemaleMCNeutral.jpg","(Don't stop, keep going, don't you dare stop.)","You",dialogueBox,characterBox);
 
-    var neutralthirtyfour = (MGender > 1)?
+    var neutralthirtyfour = (MGender > 0)?
     new DialogueScene("resources/MaleMCNeutral.jpg","(Don't stop, keep going, don't stop!)","You",dialogueBox,characterBox):
     new DialogueScene("resources/FemaleMCNeutral.jpg","(Don't stop, keep going, don't stop!)","You",dialogueBox,characterBox);
     
@@ -684,23 +684,23 @@ var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(T
 
     var neutralthirtysix = new DialogueScene("resources/CutsceneBlack.jpg","(You stand atop a mountain of corpses, some of your friends, but more that you've slain, your blade stained with their blood. Yet as you walk off, you feel nothing, nothing at all as emptiness takes form in your heart.)","()",dialogueBox,characterBox);
 
-    var neutralthirtyseven = (MGender > 1)?
+    var neutralthirtyseven = (MGender > 0)?
     new DialogueScene("resources/MaleMCNeutral.jpg","...","You",dialogueBox,characterBox):
     new DialogueScene("resources/FemaleMCNeutral.jpg","...","You",dialogueBox,characterBox);
     
-    var neutralthirtyeight = (MGender > 1)?
+    var neutralthirtyeight = (MGender > 0)?
     new DialogueScene("resources/MaleMCNeutral.jpg","(You've come this far, just to lose everything again.)","()",dialogueBox,characterBox):
     new DialogueScene("resources/FemaleMCNeutral.jpg","(You've come this far, just to lose everything again.)","()",dialogueBox,characterBox);
     
-    var neutralthirtynine = (MGender > 1)?
+    var neutralthirtynine = (MGender > 0)?
     new DialogueScene("resources/MaleMCNeutral.jpg","(A faraway cry sounds, the sobbing of a child, but you pay it no heed.)","()",dialogueBox,characterBox):
     new DialogueScene("resources/FemaleMCNeutral.jpg","(A faraway cry sounds, the sobbing of a child, but you pay it no heed.)","()",dialogueBox,characterBox);
     
-    var neutralfourty = (MGender > 1)?
+    var neutralfourty = (MGender > 0)?
     new DialogueScene("resources/MaleMCNeutral.jpg","(Ashes to Ashes, your soul to fire. Your heart was long dead since the day of the flames, buried beneath the rubble of your home, and the people you failed to save.)","()",dialogueBox,characterBox):
     new DialogueScene("resources/FemaleMCNeutral.jpg","(Ashes to Ashes, your soul to fire. Your heart was long dead since the day of the flames, buried beneath the rubble of your home, and the people you failed to save.)","()",dialogueBox,characterBox);
 
-    var neutralfourtyone = (MGender > 1)?
+    var neutralfourtyone = (MGender > 0)?
     new DialogueScene("resources/MaleMCNeutral.jpg","(Traitor, you traitor!)","You",dialogueBox,characterBox):
     new DialogueScene("resources/FemaleMCNeutral.jpg","(Traitor, you traitor!)","You",dialogueBox,characterBox);
 
@@ -708,7 +708,7 @@ var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(T
 
     var neutralfourthree = new DialogueScene("resources/CutsceneBlack.jpg","(You could recognize that voice anywhere.)","()",dialogueBox,characterBox)
     
-    var neutralfourtyfour = (MGender > 1)?
+    var neutralfourtyfour = (MGender > 0)?
     new DialogueScene("resources/MaleMCSpeak.jpg","Altair?","You",dialogueBox,characterBox):
     new DialogueScene("resources/FemaleMCSpeak.jpg","Altair?","You",dialogueBox,characterBox);
 
@@ -742,7 +742,7 @@ var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(T
 
     var badseven = new DialogueScene("resources/CaelusSmile.jpg","With all that said, I'll go get some intel on the battle plans from Amphrite.","Caelus",dialogueBox,characterBox);
 
-    var badeight = (MGender > 1)?
+    var badeight = (MGender > 0)?
     new DialogueScene("resources/MaleMCNeutral.jpg","(I can't help feeling a bit suspicious, didn't the branch always teach us that the tacticians but never reveal information to anyone else?)","You",dialogueBox,characterBox):
     new DialogueScene("resources/FemaleMCNeutral.jpg","(I can't help feeling a bit suspicious, didn't the branch always teach us that the tacticians but never reveal information to anyone else?)","You",dialogueBox,characterBox);
 
@@ -750,11 +750,11 @@ var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(T
 
     var badten = new DialogueScene("resources/CutsceneBlack.jpg","(Around a year passes, and the time of battle approaches. Nervous, you stand on the balcony to get some air.)","()",dialogueBox,characterBox);
 
-    var badeleven = (MGender > 1)?
+    var badeleven = (MGender > 0)?
     new DialogueScene("resources/MaleMCNeutral.jpg","(It's strangely quiet.)","You",dialogueBox,characterBox):
     new DialogueScene("resources/FemaleMCNeutral.jpg","(It's strangely quiet.)","You",dialogueBox,characterBox);
 
-    var badtwelve = (MGender > 1)?
+    var badtwelve = (MGender > 0)?
     new DialogueScene("resources/MaleMCGrin.jpg","(But I suppose that means everyone else is busy with preparations, that's a good thing. I sure hope we win this.)","You",dialogueBox,characterBox):
     new DialogueScene("resources/FemaleMCGrin.jpg","(But I suppose that means everyone else is busy with preparations, that's a good thing. I sure hope we win this.","You",dialogueBox,characterBox);
 
@@ -766,7 +766,7 @@ var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(T
 
     var badsixteen = new DialogueScene("resources/CutsceneBlack.jpg","(The sword plunges deeper into your back, and you choke on the warmth of your own blood. You can't talk, you can't breathe--)","()",dialogueBox,characterBox);
 
-    var badseventeen = (MGender > 1)?
+    var badseventeen = (MGender > 0)?
     new DialogueScene("resources/CaelusSad.jpg","I'm sorry, Ash.","Caelus",dialogueBox,characterBox):
     new DialogueScene("resources/CaelusSad.jpg","I'm sorry, Asha.","You",dialogueBox,characterBox);
 
@@ -778,7 +778,7 @@ var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(T
 
     var badtwentyone = new DialogueScene("resources/CaelusSmile.jpg","But I suppose sacrifices do have to be made. All hail Alestria.","Caelus",dialogueBox,characterBox);
 
-    var badtwentytwo = (MGender > 1)?
+    var badtwentytwo = (MGender > 0)?
     new DialogueScene("resources/CaelusGrin.jpg","Ashes to ashes, dust to dust. Farewell, Ash, and may you rest forevermore.","Caelus",dialogueBox,characterBox):
     new DialogueScene("resources/CaelusGrin.jpg","Ashes to ashes, dust to dust. Goodbye, Asha, and may you rest forevermore.","Caelus",dialogueBox,characterBox);
 
