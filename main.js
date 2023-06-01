@@ -226,11 +226,11 @@ uno.textbox.addEventListener("click", function(){
     nextScene();
   });
 dos.textbox.addEventListener("click", function(){
-    BadEnding ++;
+    NeutralEnding ++;
     nextScene();
   });
 tres.textbox.addEventListener("click", function(){
-    NeutralEnding ++;
+    BadEnding ++;
     nextScene();
   });
 
@@ -839,36 +839,6 @@ var highest = [];
             goodtwentyeight
         ],
         [
-            badone,
-            badtwo,
-            badthree,
-            badfour,
-            badfive,
-            badsix,
-            badseven,
-            badeight,
-            badnine,
-            badten,
-            badeleven,
-            badtwelve,
-            badthirteen,
-            badfourteen,
-            badfifteen,
-            badsixteen,
-            badseventeen,
-            badeighteen,
-            badnineteen,
-            badtwenty,
-            badtwentyone,
-            badtwentytwo,
-            badtwentythree,
-            badtwentyfour,
-            badtwentyfive,
-            badtwentysix,
-            badtwentyseven,
-            badtwentyeight
-        ],
-        [
             neutralone,
             neutraltwo,
             neutralthree,
@@ -922,6 +892,36 @@ var highest = [];
             neutralfiftyone,
             neutralfiftytwo
             //SO MANY SCENES WHATTT
+        ],
+        [
+            badone,
+            badtwo,
+            badthree,
+            badfour,
+            badfive,
+            badsix,
+            badseven,
+            badeight,
+            badnine,
+            badten,
+            badeleven,
+            badtwelve,
+            badthirteen,
+            badfourteen,
+            badfifteen,
+            badsixteen,
+            badseventeen,
+            badeighteen,
+            badnineteen,
+            badtwenty,
+            badtwentyone,
+            badtwentytwo,
+            badtwentythree,
+            badtwentyfour,
+            badtwentyfive,
+            badtwentysix,
+            badtwentyseven,
+            badtwentyeight
         ]
     ];
 
