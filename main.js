@@ -550,12 +550,6 @@ var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(T
 //     a = aaaaa;
 // }
 
-var currentScene = 100;
-
-GoodEnding = 3;
-BadEnding = 3;
-NeutralEnding = 1;
-
 var scenes = [
     secondScene,
     thirdScene,
@@ -657,7 +651,8 @@ var scenes = [
     hundred,
     hundredoone,
     hundredotwo,// WHY THE F**K DID YOU DO THIS --Stephanie
-    hundredothree
+    hundredothree,
+    
 
 ]
 
