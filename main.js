@@ -792,7 +792,7 @@ var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(T
 
     var badtwentyeight = new DialogueScene("resources/Test.jpg","(Yes I had to)","...",dialogueBox,characterBox);
 
-    var highest = [];
+var highest = [];
     var endings = [GoodEnding,NeutralEnding,BadEnding];
     var highestValue = 0;
     for (let i = 0; i < endings.length; i++) {
