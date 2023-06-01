@@ -682,15 +682,15 @@ var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(T
     
     var neutralthirtyfive = new DialogueScene("resources/CutsceneBlack.jpg","(The world spun, whirring as you feel your instincts take over before stillness reigns, and the town is empty, save for you. You did it, you'd killed them all. Even Caelus.)","()",dialogueBox,characterBox);
 
-    var neutralthirtysix = new DialogueScene("resources/CutsceneBlack.jpg","(You stand atop a mountain of corpses, some of your friends, but more that you’ve slain, your blade stained with their blood. Yet as you walk off, you feel nothing, nothing at all as emptiness takes form in your heart.)","()",dialogueBox,characterBox);
+    var neutralthirtysix = new DialogueScene("resources/CutsceneBlack.jpg","(You stand atop a mountain of corpses, some of your friends, but more that you've slain, your blade stained with their blood. Yet as you walk off, you feel nothing, nothing at all as emptiness takes form in your heart.)","()",dialogueBox,characterBox);
 
     var neutralthirtyseven = (MGender > 1)?
     new DialogueScene("resources/MaleMCNeutral.jpg","...","You",dialogueBox,characterBox):
     new DialogueScene("resources/FemaleMCNeutral.jpg","...","You",dialogueBox,characterBox);
     
     var neutralthirtyeight = (MGender > 1)?
-    new DialogueScene("resources/MaleMCNeutral.jpg","(You’ve come this far, just to lose everything again.)","()",dialogueBox,characterBox):
-    new DialogueScene("resources/FemaleMCNeutral.jpg","(You’ve come this far, just to lose everything again.)","()",dialogueBox,characterBox);
+    new DialogueScene("resources/MaleMCNeutral.jpg","(You've come this far, just to lose everything again.)","()",dialogueBox,characterBox):
+    new DialogueScene("resources/FemaleMCNeutral.jpg","(You've come this far, just to lose everything again.)","()",dialogueBox,characterBox);
     
     var neutralthirtynine = (MGender > 1)?
     new DialogueScene("resources/MaleMCNeutral.jpg","(A faraway cry sounds, the sobbing of a child, but you pay it no heed.)","()",dialogueBox,characterBox):
@@ -734,7 +734,7 @@ var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(T
 
     var badthree = new DialogueScene("resources/CaelusSmile.jpg","Still remember me?","Caelus",dialogueBox,characterBox);
 
-    var badfour = new DialogueScene("resources/CaelusSmile.jpg","A-haha I was kidding~ Welcome to the scouting faction! Where we relay news and intel to the tacticians and fighters so tehy can carry out with the plan better.","Caelus",dialogueBox,characterBox);
+    var badfour = new DialogueScene("resources/CaelusSmile.jpg","A-haha I was kidding~ Welcome to the scouting faction! Where we relay news and intel to the tacticians and fighters so they can carry out with the plan better.","Caelus",dialogueBox,characterBox);
 
     var badfive = new DialogueScene("resources/CaelusSmile.jpg","Of course we'll also have a part in the fighting if you wanted to exact revenge with your own hands, except we mainly do long range combat and short range only when neccesary.","Caelus",dialogueBox,characterBox);
 
