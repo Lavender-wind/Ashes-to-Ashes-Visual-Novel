@@ -226,11 +226,11 @@ uno.textbox.addEventListener("click", function(){
     nextScene();
   });
 dos.textbox.addEventListener("click", function(){
-    NeutralEnding ++;
+    BadEnding ++;
     nextScene();
   });
 tres.textbox.addEventListener("click", function(){
-    BadEnding ++;
+    NeutralEnding ++;
     nextScene();
   });
 
@@ -311,8 +311,8 @@ var twentyfive = new DialogueScene("resources/CaelusSmile.jpg","I think you're t
 var twentysix = new DialogueScene("resources/CaelusSmile.jpg","Ah, but we must not delay, I'll take you to see the others, let's go!","Caelus",dialogueBox,characterBox);
 
 var twentyseven = (MGender > 1)?
-new ChoiceScene("resources/MaleMCNeutral.jpg","(...Should I trust him?)","You",dialogueBox,characterBox, "Hesitate", "Don't Follow Him", "Follow Him", uno, dos, tres):
-new ChoiceScene("resources/FemaleMCNeutral.jpg","()...Should I trust him?)","You",dialogueBox,characterBox, "Hesitate", "Don't Follow Him", "Follow Him", uno, dos, tres);
+new ChoiceScene("resources/MaleMCNeutral.jpg","(...Should I trust him?)","You",dialogueBox,characterBox, "Hesitate", "Follow Him", "Don't Follow Him", uno, dos, tres):
+new ChoiceScene("resources/FemaleMCNeutral.jpg","()...Should I trust him?)","You",dialogueBox,characterBox, "Hesitate", "Follow Him", "Don't Follow Him", uno, dos, tres);
 
 var twentyeight = (MGender > 1)?
 new DialogueScene("resources/MaleMCNeutral.jpg","(A bit hesitant, you don't follow immediately, but Caelus's hand grabs you.)","()",dialogueBox,characterBox):
@@ -363,8 +363,8 @@ var fourtyseven = new DialogueScene("resources/AltairNeutral.jpg","(At Amphrite'
 var fourtyeight = new DialogueScene("resources/AltairNeutral.jpg","I specialize in keeping people who shouldn't be here away.","Altair",dialogueBox,characterBox);
 
 var fourtynine = (MGender > 1)?
-new ChoiceScene("resources/MaleMCNeutral.jpg","(I guess I should think of something to say.)","You",dialogueBox,characterBox, "Be Sarcastic", "Follow Up With a Compliment", "Say Something Random", uno, dos, tres):
-new ChoiceScene("resources/FemaleMCNeutral.jpg","(I guess I should think of something to say.)","You",dialogueBox,characterBox, "Be Sarcastic", "Follow Up With a Compliment", "Say Something Random", uno, dos, tres);
+new ChoiceScene("resources/MaleMCNeutral.jpg","(I guess I should think of something to say.)","You",dialogueBox,characterBox, "Be Sarcastic", "Say Something Random", "Follow Up With a Compliment", uno, dos, tres):
+new ChoiceScene("resources/FemaleMCNeutral.jpg","(I guess I should think of something to say.)","You",dialogueBox,characterBox, "Be Sarcastic", "Say Something Random", "Follow Up With a Compliment", uno, dos, tres);
 
 var fifty = (MGender > 1)?
 new DialogueScene("resources/MaleMCGrin.jpg","Well it seems you've been doing a pretty good job.","You",dialogueBox,characterBox):
@@ -407,8 +407,8 @@ new DialogueScene("resources/MaleMCNeutral.jpg","...","You",dialogueBox,characte
 new DialogueScene("resources/FemaleMCNeutral.jpg","...","You",dialogueBox,characterBox);
 
 var sixtythree = (MGender > 1)?
-new ChoiceScene("resources/MaleMCNeutral.jpg","(Do I tell him?)","You",dialogueBox,characterBox, "Don't Tell Him", "Tell Him", "Lie", uno, dos, tres):
-new ChoiceScene("resources/FemaleMCNeutral.jpg","(Do I tell him?)","You",dialogueBox,characterBox, "Don't Tell Him", "Tell Him", "Lie", uno, dos, tres);
+new ChoiceScene("resources/MaleMCNeutral.jpg","(Do I tell him?)","You",dialogueBox,characterBox, "Don't Tell Him", "Lie", "Don't Tell Him", uno, dos, tres):
+new ChoiceScene("resources/FemaleMCNeutral.jpg","(Do I tell him?)","You",dialogueBox,characterBox, "Don't Tell Him", "Lie", "Don't Tell Him", uno, dos, tres);
 
 var sixtyfour = (MGender > 1)?
 new DialogueScene("resources/MaleMCNeutral.jpg","It's-","You",dialogueBox,characterBox):
@@ -439,8 +439,8 @@ var seventythree = new DialogueScene("resources/AltairNeutral.jpg","Alestria is 
 var seventyfour = new DialogueScene("resources/CaelusGrin.jpg","I suppose you're all right. But walking bait that attracts Alestria's attention would be quite troublesome for us, if they didn't pitch in to do anything.","Caelus",dialogueBox,characterBox);
 
 var seventyfive = (MGender > 1)?
-new ChoiceScene("resources/CaelusSmile.jpg","Well, would you like to join us, Ash?","Caelus",dialogueBox,characterBox, "I suppose", "Yes", "I don't really have a choice now, do I?", uno, dos, tres):
-new ChoiceScene("resources/CaelusSmile.jpg","Well, would you like to join us, Asha?","Caelus",dialogueBox,characterBox, "I suppose", "Yes", "I don't really have a choice now, do I?", uno, dos, tres);
+new ChoiceScene("resources/CaelusSmile.jpg","Well, would you like to join us, Ash?","Caelus",dialogueBox,characterBox, "I suppose", "I don't really have a choice now, do I?", "Yes", uno, dos, tres):
+new ChoiceScene("resources/CaelusSmile.jpg","Well, would you like to join us, Asha?","Caelus",dialogueBox,characterBox, "I suppose", "I don't really have a choice now, do I?", "Yes", uno, dos, tres);
 
 var seventysix = (MGender > 1)?
 new DialogueScene("resources/MaleMCNeutral.jpg","There's no way I could hesitate at a time like this. Alestria...for killing everyone I've ever known, need to pay.","You",dialogueBox,characterBox):
@@ -492,13 +492,13 @@ var ninetyseven = new DialogueScene("resources/CutsceneBlack.jpg","(You arrive a
 var ninetyeight = new DialogueScene("resources/CutsceneBlack.jpg","(Alestria will pay, I will make sure of that.)","You",dialogueBox,characterBox);
 
 //you have committed a programming equivalent of a war crime --Stephanie
-var ninetynine = new ChoiceScene("resources/CutsceneBlack.jpg","(I might wanna think of which faction I wanna join, too. Should I become a tactician with Amphrite, a fighter with Altair, or a scout with Caelus? I'll do my best to get into the one that benefits my mission most. In order to do that I'll...)","You",dialogueBox,characterBox, "Study Alestria and Their Weaknesses", "Train hard", "Familiarize Myself With More People", uno, dos, tres);
+var ninetynine = new ChoiceScene("resources/CutsceneBlack.jpg","(I might wanna think of which faction I wanna join, too. Should I become a tactician with Amphrite, a fighter with Altair, or a scout with Caelus? I'll do my best to get into the one that benefits my mission most. In order to do that I'll...)","You",dialogueBox,characterBox, "Study Alestria and Their Weaknesses", "Familiarize Myself With More People", "Train Hard", uno, dos, tres);
 
 //you have committed a programming equivalent of a war crime --Stephanie
-var hundred = new ChoiceScene("resources/CutsceneBlack.jpg","(I think...)","You",dialogueBox,characterBox, "Strategies Are the Most Important", "I Need to Grow Stronger", "I Need to Gain Advantages Over the Situation", uno, dos, tres);
+var hundred = new ChoiceScene("resources/CutsceneBlack.jpg","(I think...)","You",dialogueBox,characterBox, "Strategies Are the Most Important", "I Need to Gain Advantages Over the Situation", "I Need to Grow Stronger", uno, dos, tres);
 
 //you have committed a programming equivalent of a war crime --Stephanie
-var hundredoone = new ChoiceScene("resources/CutsceneBlack.jpg","(I hope that everything ends well.)","You",dialogueBox,characterBox, "I Hope We Can Win", "I Hope Alestria Burns", "I Hope That I Don't Die", uno, dos, tres);
+var hundredoone = new ChoiceScene("resources/CutsceneBlack.jpg","(I hope that everything ends well.)","You",dialogueBox,characterBox, "I Hope We Can Win", "I Hope That I Don't Die", "I Hope That Alestria Burns", uno, dos, tres);
 
 //you have committed a programming equivalent of a war crime --Stephanie
 var hundredotwo = new DialogueScene("resources/CutsceneBlack.jpg","(Time passes quickly, and before you know it, it's been two years. The branch has grown and you are sorted into a faction.)","()",dialogueBox,characterBox);
