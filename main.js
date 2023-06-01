@@ -587,7 +587,7 @@ var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(T
 
     var goodtwentyseven = new DialogueScene("resources/CutsceneBlack.jpg","Good Ending","...",dialogueBox,characterBox);
 
-    var goodtwentyeight = new DialogueScene("resources/Test.jpg","(Yes I had to)","...",dialogueBox,characterBox);
+    var goodtwentyeight = new DialogueScene("resources/Test.png","(Yes I had to)","...",dialogueBox,characterBox);
 
 
     var neutralone = new DialogueScene("resources/AltairBlush.jpg","..!","Altair",dialogueBox,characterBox);
@@ -724,7 +724,7 @@ var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(T
 
     var neutralfiftyone = new DialogueScene("resources/CutsceneBlack.jpg","Neutral Ending","...",dialogueBox,characterBox);
 
-    var neutralfiftytwo = new DialogueScene("resources/Test.jpg","(Yes I had to)","...",dialogueBox,characterBox);
+    var neutralfiftytwo = new DialogueScene("resources/Test.png","(Yes I had to)","...",dialogueBox,characterBox);
 
     var badone = new DialogueScene("resources/CaelusSmile.jpg","Oh wow, isn't great to see you here.","Caelus",dialogueBox,characterBox);
 
@@ -790,7 +790,7 @@ var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(T
 
     var badtwentyseven = new DialogueScene("resources/CutsceneBlack.jpg","Bad Ending","...",dialogueBox,characterBox);
 
-    var badtwentyeight = new DialogueScene("resources/Test.jpg","(Yes I had to)","...",dialogueBox,characterBox);
+    var badtwentyeight = new DialogueScene("resources/Test.png","(Yes I had to)","...",dialogueBox,characterBox);
 
 var highest = [];
     var endings = [GoodEnding,NeutralEnding,BadEnding];
@@ -804,9 +804,6 @@ var highest = [];
             highest = highest.concat(i);
         }
     }
-    var index = Math.floor(Math.random()*highest.length);
-    var ending = highest[index];
-    scenes = scenes.concat(branches[ending]);
 
     var branches = [
         [
@@ -926,6 +923,9 @@ var highest = [];
         ]
     ];
 
+    var index = Math.floor(Math.random()*highest.length);
+    var ending = highest[index];
+    scenes = scenes.concat(branches[ending]);
 });
 // var a;
 
