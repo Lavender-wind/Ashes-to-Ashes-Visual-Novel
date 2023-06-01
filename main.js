@@ -425,12 +425,12 @@ var sixtynine = new DialogueScene("resources/AltairNeutral.jpg","!","Altair",dia
 var seventy = new DialogueScene("resources/AmphriteSpeak.jpg","Now, no need to scare our little guest, is there?","Amphrite",dialogueBox,characterBox);
 
 var seventyone = (MGender > 1)?
-new DialogueScene("resources/AmphriteSpeak.jpg","He's innocent, but you really should've told us sooner.","You",dialogueBox,characterBox):
-new DialogueScene("resources/AmphriteSpeak.jpg","She's innocent, but you really should've told us sooner.","You",dialogueBox,characterBox);
+new DialogueScene("resources/AmphriteSpeak.jpg","He's innocent, but you really should've told us sooner.","Amphrite",dialogueBox,characterBox):
+new DialogueScene("resources/AmphriteSpeak.jpg","She's innocent, but you really should've told us sooner.","Amphrite",dialogueBox,characterBox);
 
 var seventytwo = (MGender > 1)?
-new DialogueScene("resources/AmphriteSpeak.jpg","Now, Ash, I'm sure we'll work something out. No harm will come to you.","You",dialogueBox,characterBox):
-new DialogueScene("resources/AmphriteSpeak.jpg","Now, Asha, I'm sure we'll work something out. No harm will come to you.","You",dialogueBox,characterBox);
+new DialogueScene("resources/AmphriteSpeak.jpg","Now, Ash, I'm sure we'll work something out. No harm will come to you.","Amphrite",dialogueBox,characterBox):
+new DialogueScene("resources/AmphriteSpeak.jpg","Now, Asha, I'm sure we'll work something out. No harm will come to you.","Amphrite",dialogueBox,characterBox);
 
 var seventythree = new DialogueScene("resources/AltairNeutral.jpg","Alestria is dangerous, we could use another more allies in our revenge. Animosity will bring nothing.","Altair",dialogueBox,characterBox);
 
@@ -497,7 +497,7 @@ var hundred = new ChoiceScene("resources/CutsceneBlack.jpg","(I think...)","You"
 var hundredoone = new ChoiceScene("resources/CutsceneBlack.jpg","(I hope that everything ends well.)","You",dialogueBox,characterBox, "I Hope We Can Win", "I Hope Alestria Burns", "I Hope That I Don't Die", uno, dos, tres);
 
 //you have committed a programming equivalent of a war crime --Stephanie
-var hundredotwo = new DialogueScene("resources/CutsceneBlack.jpg","(Time passes quickly, and before you know itm it's been two years. The branch has grown and you are sorted into a faction.)","()",dialogueBox,characterBox);
+var hundredotwo = new DialogueScene("resources/CutsceneBlack.jpg","(Time passes quickly, and before you know it, it's been two years. The branch has grown and you are sorted into a faction.)","()",dialogueBox,characterBox);
 
 class BranchingDialougeScene extends DialogueScene{
     constructor(img, text, character, dialogueBox, characterBox, onBranch){
@@ -542,6 +542,12 @@ var hundredothree = new BranchingDialougeScene("resources/CutsceneBlack.jpg","(T
             badseven
         ]
     ];
+
+    var goodone = (MGender > 1)?
+    new DialogueScene("resources/AmphriteSpeak.jpg","Ah, welcome, long time no see, Ash!","Amphrite",dialogueBox,characterBox):
+    new DialogueScene("resources/AmphriteSpeak.jpg","Ah, welcome, long time no see, Asha!","Amphrite",dialogueBox,characterBox);
+    
+
     var highest = [];
     var endings = [GoodEnding,NeutralEnding,BadEnding];
     var highestValue = 0;
