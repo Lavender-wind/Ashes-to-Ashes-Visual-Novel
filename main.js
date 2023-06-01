@@ -134,14 +134,14 @@ class TextBox{
         this.textbox.innerHTML = "";
         this.currentletter = 0;
         if(this.timeoutId)clearTimeout(this.timeoutId);
-        this.timeoutId = setTimeout(()=>{this.update();},50);
+        this.timeoutId = setTimeout(()=>{this.update();},20);
     }
     update(){
         if(this.text === undefined) return;
         this.textbox.innerHTML = this.textbox.innerHTML + this.text[this.currentletter];
         this.currentletter ++;
         if(this.currentletter>=this.text.length)return;
-        this.timeoutId = setTimeout(()=>{this.update();},50);
+        this.timeoutId = setTimeout(()=>{this.update();},20);
     }
 }
 
